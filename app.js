@@ -4,6 +4,7 @@ define(function(require){
 		chosen = require('chosen'),
 		monster = require('monster'),
 		toastr = require('toastr'),
+		language = require('monster-language'),
 		timezone = require('monster-timezone');
 
 	var app = {
@@ -13,8 +14,11 @@ define(function(require){
 
 		i18n: { 
 			'en-US': { customCss: false },
-			'fr-FR': { customCss: false },
-			'ru-RU': { customCss: false }
+                        'de-DE': { customCss: false },
+                        'it-IT': { customCss: false },
+                        'fr-FR': { customCss: false },
+                        'ro-RO': { customCss: false },
+                        'ru-RU': { customCss: false }
 		},
 
 		requests: {},
@@ -486,6 +490,7 @@ define(function(require){
 				pwdToggleDiv = newAdminDiv.find('.password-toggle-div');
 
 			timezone.populateDropdown(parent.find('#accountsmanager_new_account_timezone'));
+			language.populateDropdown(parent.find('#accountsmanager_new_account_language'));
 
 			parent.find('.change-realm').on('click', function(e) {
 				parent.find('.generated-realm').hide();
@@ -1477,8 +1482,11 @@ define(function(require){
 			}
 
 			timezone.populateDropdown(contentHtml.find('#accountsmanager_account_timezone'), accountData.timezone);
-
 			contentHtml.find('#accountsmanager_account_timezone').chosen({search_contains: true, width: "220px"});
+
+			language.populateDropdown(contentHtml.find('#accountsmanager_account_language'), accountData.language);
+			contentHtml.find('#accountsmanager_account_language').chosen({search_contains: true, width: "220px"});
+
 
 			monster.ui.tooltips(contentHtml);
 
