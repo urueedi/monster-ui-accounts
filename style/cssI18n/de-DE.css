@@ -1,3 +1,140 @@
+/***** Left Menu *****/
+#accounts_manager_view .left-menu {
+	/*float: left;*/
+	/*background-color: #F3F3F3;*/
+	/*border-right: solid 1px #999;*/
+	/*width: 240px;*/
+	/*overflow: hidden;*/
+}
+/*
+#accounts_manager_view .left-menu .search-box {
+	width: 220px;
+	padding: 20px 10px;
+	border-bottom: solid 1px #999;
+}
+
+#accounts_manager_view .left-menu .search-box .search-query {
+	width: 178px;
+}
+
+#accounts_manager_view .left-menu .account-list-container {
+	width: 480px;
+}
+
+#accounts_manager_view .left-menu .account-list, #accounts_manager_view .left-menu .account-list-slider {
+	margin: 0;
+	list-style: none;
+	float: left;
+	overflow-y: auto;
+}
+
+#accounts_manager_view .left-menu .account-list-add {
+	line-height: 50px;
+	max-height: 50px;
+	font-weight: 600;
+	background-color: #ddd;
+	width: 240px;
+}
+
+#accounts_manager_view .left-menu .account-list-add i {
+	margin: 10px;
+}
+
+#accounts_manager_view .left-menu .account-list-add:hover {
+	background-color: #e6e6e6;
+	color: #22ccff;
+	cursor: pointer;
+}
+
+#accounts_manager_view .left-menu .account-list-add:hover i {
+	color: #22ccff;
+}
+
+#accounts_manager_view .left-menu .account-list-element {
+	line-height: 60px;
+	max-height: 60px;
+	overflow: hidden;
+	border-top: solid 1px #ccc;
+	border-right: solid 1px #ccc;
+	font-size: 0px; /* This is a trick to remove the spacing between inline-block elements *
+}
+
+#accounts_manager_view .left-menu .account-list-container li:last-child {
+	border-bottom: solid 1px #ccc;
+}
+
+#accounts_manager_view .left-menu .account-list-element.active {
+	background-color: #fff;
+	border-top:  solid 2px #22ccff;
+}
+
+#accounts_manager_view .left-menu .account-list-element > div {
+	padding: 0 10px;
+	display: inline-block;
+}
+
+#accounts_manager_view .left-menu .account-list-element > div:hover {
+	background-color: #eee;
+	cursor: pointer;
+	color: #22ccff;
+}
+
+#accounts_manager_view .left-menu .account-list-element > div:hover > i {
+	color: #22ccff;
+}
+
+#accounts_manager_view .left-menu .account-link {
+	width: 220px;
+}
+
+#accounts_manager_view .left-menu .account-link.smaller-link {
+	width: 159px;
+}
+
+#accounts_manager_view .left-menu .account-link.disabled:hover {
+	background-color: inherit;
+	cursor: not-allowed;
+}
+
+#accounts_manager_view .left-menu .account-link .account-name {
+	overflow: hidden;
+	height: 40px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 16px;
+	line-height: 40px;
+}
+
+#accounts_manager_view .left-menu .account-link .account-realm {
+	overflow: hidden;
+	height: 20px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 10px;
+	line-height: 6px;
+}
+
+#accounts_manager_view .left-menu .account-link .account-error {
+	font-size: 16px;
+	color: #ee1212;
+	font-style: italic;
+	height: 60px;
+	line-height: 60px;
+}
+
+#accounts_manager_view .left-menu .account-children-link {
+	width: 40px;
+	height: 60px;
+	vertical-align: top;
+	float: right;
+	border-left: solid 1px #ccc;
+}
+
+#accounts_manager_view .left-menu .account-children-link > i {
+	vertical-align: middle;
+	margin-left: 17px;
+}*/
+
 /***** Top bar *****/
 
 #accounts_manager_view .content {
@@ -37,7 +174,7 @@
 
 #accounts_manager_view .main-content .landing-content {
 	text-align: center;
-	color: #22a5ff;
+	color: #22ccff;
 	font-size: 26px;
 	line-height: 30px;
 	text-shadow: 1px 1px 0px #ccc;
@@ -64,28 +201,8 @@
 }
 
 #accounts_manager_view .main-content .tab-content {
-	background: transparent;
-	border: none;
+	border-radius: 4px;
 	overflow: visible;
-}
-#accounts_manager_view .main-content .tab-content .tab-pane {
-	border-radius: 2px;
-	border: solid 1px #c0c0c9;
-	background: #f0f0f9;
-}
-
-#accounts_manager_view .main-content .tab-content .tab-pane#accountsmanager_overview_tab {
-	border: none;
-}
-
-#accounts_manager_view .main-content .tab-content .buttons-div {
-	margin-top: 20px;
-	padding-top: 20px;
-	border-top: solid 1px #c0c0c9;
-}
-
-#accounts_manager_view .main-content .tab-content .buttons-div > button {
-	float: right;
 }
 
 /***** Edit: Overview *****/
@@ -102,7 +219,6 @@
 	margin-right: 10px;
 }
 
-/*
 #accounts_manager_view .main-content .list-settings {
 	list-style-type: none;
 	margin: 0;
@@ -114,8 +230,7 @@
 }
 
 #accounts_manager_view .main-content .list-settings .settings-item.open {
-	border-top: 2px solid #22a5ff;
-	border-radius: 1px 1px 0px 0px;
+	border-top: 2px solid #22ccff;
 }
 
 #accounts_manager_view .main-content .list-settings .settings-item .title {
@@ -132,7 +247,7 @@
 }
 
 #accounts_manager_view .main-content .list-settings .settings-item .settings-link {
-	color: #303039;
+	color: #333;
 	cursor: pointer;
 	display: block;
 	font-weight: 600;
@@ -142,7 +257,7 @@
 }
 
 #accounts_manager_view .main-content .list-settings .settings-item.disabled .settings-link {
-	background-color: #e0e0e9;
+	background-color: #eee;
 	cursor: default;
 	opacity: 0.5;
 }
@@ -152,7 +267,7 @@
 }
 
 #accounts_manager_view .main-content .list-settings .settings-item .settings-link:hover {
-	background-color: #e0e0e9;
+	background-color: #eeeeee;
 }
 
 #accounts_manager_view .main-content .list-settings .settings-item .settings-link .description {
@@ -169,7 +284,7 @@
 }
 
 #accounts_manager_view .main-content .list-settings .settings-item .settings-link .update {
-	color: #22a5ff;
+	color: #22ccff;
 	float: right;
 }
 
@@ -205,214 +320,6 @@
 #accounts_manager_view .main-content .list-settings .settings-item-content #accountsmanager_account_realm + .monster-invalid {
 	width: 420px;
 }
-*/
-#accounts_manager_view .main-content .list-settings {
-	overflow: visible;
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	background-color: #f0f0f9;
-}
-
-#accounts_manager_view .main-content .list-settings .settings-item {
-	border-top: 1px solid #c0c0c9;
-	border-left: 1px solid #c0c0c9;
-	border-right: 1px solid #c0c0c9;
-}
-#accounts_manager_view .main-content .list-settings .settings-item:first-child {
-	border-top-left-radius: 2px;
-	border-top-right-radius: 2px;
-}
-#accounts_manager_view .main-content .list-settings .settings-item:last-child {
-	border-bottom-left-radius: 2px;
-	border-bottom-right-radius: 2px;
-	border-bottom: 1px solid #c0c0c9;
-}
-
-#accounts_manager_view .main-content .list-settings .settings-item:last-child .settings-item-content {
-	border-radius: 0 0 4px 4px;
-}
-
-#accounts_manager_view .main-content .list-settings .settings-item.open {
-	border: 1px solid #22a5ff;
-	background-color: #fff;
-}
-
-#accounts_manager_view .main-content .list-settings .settings-item.open + .settings-item {
-	border-top: none;
-}
-
-#accounts_manager_view .main-content .list-settings .settings-item .settings-link {
-	color: #303039;
-	cursor: pointer;
-	display: block;
-	font-weight: 600;
-	height: 60px;
-	line-height: 60px;
-	padding: 0px 15px;
-	text-decoration: none;
-}
-#accounts_manager_view .main-content .list-settings .settings-item.disabled .settings-link {
-	background-color: #e0e0e9;
-	cursor: default;
-	opacity: 0.5;
-}
-
-#accounts_manager_view .main-content .list-settings .settings-item:not(.open) .settings-link:hover {
-	background-color: #e0e0e9;
-}
-
-#accounts_manager_view .main-content .list-settings .settings-item.open .settings-link {
-	padding: 0px;
-	margin: 0 15px;
-	border-bottom: solid 1px #c0c0c9;
-}
-
-#accounts_manager_view .main-content .list-settings .settings-item .title {
-	float: left;
-	font-size: 13px;
-	font-weight: bold;
-	width: 220px;
-}
-
-#accounts_manager_view .main-content .list-settings .settings-item .date {
-	font-style: italic;
-	font-size: 12px;
-	margin-left: 20px;
-}
-
-#accounts_manager_view .main-content .list-settings .settings-item .settings-link .description {
-	display: inline-block;
-	font-weight: 600;
-}
-
-#accounts_manager_view .main-content .list-settings .settings-item .settings-link .description .number {
-	font-weight: bold;
-	color: #22a5ff;
-}
-
-#accounts_manager_view .main-content .list-settings .settings-item .settings-link .update {
-	float: right;
-	overflow: hidden;
-}
-#accounts_manager_view .main-content .list-settings .settings-item .settings-link .update .text {
-	display: none;
-	margin-left: 5px;
-}
-
-#accounts_manager_view .main-content .list-settings .settings-item .settings-link .changes-saved {
-	float: right;
-	display: none;
-}
-
-#accounts_manager_view .main-content .list-settings .settings-item:not(.disabled) .settings-link:hover .update .text {
-	display: inline-block;
-	-webkit-animation-duration: 0.5s;
-			animation-duration: 0.5s;
-	-webkit-animation-fill-mode: both;
-			animation-fill-mode: both;
-	-webkit-animation-name: accountsShowEdit;
-			animation-name: accountsShowEdit;
-}
-
-#accounts_manager_view .main-content .list-settings .settings-item-content {
-	display: none;
-	padding: 20px 15px;
-}
-
-#accounts_manager_view .main-content .list-settings .settings-item-content .form-horizontal {
-	margin: 0;
-}
-
-#accounts_manager_view .main-content .list-settings .settings-item-content label.uneditable {
-	color: #22a5ff;
-	cursor: default;
-	font-weight: 600;
-	padding-top: 5px;
-}
-
-#accounts_manager_view .main-content .list-settings .settings-item-content .edition {
-	display: none;
-}
-
-#accounts_manager_view .main-content .list-settings .settings-item .settings-link .description > ul {
-	display: table-cell;
-	height: 60px;
-	list-style: none outside none;
-	margin: 0;
-	vertical-align: middle;
-}
-
-#accounts_manager_view .main-content .list-settings .control-label {
-	width: 200px;
-	text-align: left;
-}
-
-#accounts_manager_view .main-content .list-settings .controls {
-	margin-left: 220px;
-}
-#accounts_manager_view .main-content .list-settings #form_accountsmanager_account_admins .controls {
-	margin-left: initial;
-}
-
-#accounts_manager_view .main-content .list-settings .controls button,
-#accounts_manager_view .main-content .list-settings .controls input {
-	margin-right: 5px;
-}
-#accounts_manager_view .main-content .list-settings #form_accountsmanager_account_admins .controls button,
-#accounts_manager_view .main-content .list-settings #form_accountsmanager_account_admins .controls input {
-	margin-right: initial;
-}
-
-#accounts_manager_view .main-content .list-settings .controls input {
-	border-radius: 2px;
-	box-shadow: none;
-	border-color: #c0c0c9;
-}
-
-#accounts_manager_view .main-content .list-settings .controls input:focus {
-	border-color: #22a5ff;
-}
-
-#accounts_manager_view .main-content .list-settings .action-group {
-	padding-top: 20px;
-	border-top: solid 1px #c0c0c9;
-}
-
-#accounts_manager_view .main-content .list-settings .action-bar {
-	float: right;
-}
-
-#accounts_manager_view .main-content .list-settings .action-bar > *:not(:last-child) {
-	margin-right: 10px;
-}
-
-#accounts_manager_view .main-content .list-settings .controls .plain-text {
-	margin-top: 5px;
-}
-
-@-webkit-keyframes accountsShowEdit {
-	0% {
-		opacity: 0;
-		margin-right: -50px;
-	}
-	100% {
-		opacity: 1;
-		margin-right: 0px;
-	}
-}
-@keyframes accountsShowEdit {
-	0% {
-		opacity: 0;
-		margin-right: -50px;
-	}
-	100% {
-		opacity: 1;
-		margin-right: 0px;
-	}
-}
-
-/********************************************************************************************************/
 
 #accounts_manager_view .close-link {
 	float:right;
@@ -425,7 +332,7 @@
 #accounts_manager_view .close-link:hover,
 #accounts_manager_view .close-link:focus {
 	text-decoration: none;
-	color: #22a5ff;
+	color: #22CCFF;
 }
 
 #accounts_manager_view .close-link:hover > span,
@@ -460,13 +367,13 @@
 
 #form_accountsmanager_account_admins .admin-element {
 	background-color: #F3F3F3;
-	border-radius: 2px;
+	border-radius: 4px;
 	border: solid 1px #ccc;
 	margin-bottom: 10px;
 }
 
 #form_accountsmanager_account_admins .admin-element .admin-element-link:hover {
-	background-color: #e0e0e9;
+	background-color: #EEE;
 	text-decoration: initial;
 }
 
@@ -492,28 +399,18 @@
 	padding: 10px;
 }
 
-#form_accountsmanager_account_admins .admin-element .password-strength-container {
-	position: absolute;
-	top: 5px;
-	left: 125px;
-}
-
-#form_accountsmanager_account_admins .admin-element .admin-element-edit .edit-admin-password-div {
-	position: relative;
-}
-
 #form_accountsmanager_account_admins .new-admin-element {
 	display: none;
 	position: relative;
 }
 
 #form_accountsmanager_account_admins .new-admin-element .new-admin-tabs > li {
-	width: 50%;
 	text-align: center;
 }
 
-#form_accountsmanager_account_admins .new-admin-element .tab-content .tab-pane {
+#form_accountsmanager_account_admins .new-admin-element .tab-content {
 	padding: 5px;
+	border-radius: 4px;
 }
 
 #form_accountsmanager_account_admins .new-admin-element button {
@@ -524,7 +421,7 @@
 	margin-bottom: 10px;
 }
 
-#form_accountsmanager_account_admins .create-user-div .fa-user {
+#form_accountsmanager_account_admins .create-user-div .icon-user {
 	vertical-align: middle;
 }
 
@@ -562,12 +459,8 @@
 
 #form_accountsmanager_account_admins .create-user-div .new-admin-password-div {
 	display: none;
-	margin-top: 15px;
+	margin-top: 5px;
 	position: relative;
-}
-
-#form_accountsmanager_account_admins .create-user-div .new-admin-password-div .checkbox-container {
-	margin-top: 10px;
 }
 
 #form_accountsmanager_account_admins .create-user-div .new-admin-password-div label.monster-invalid[for="password"],
@@ -577,7 +470,8 @@
 
 #form_accountsmanager_account_admins .create-user-div .new-admin-password-div label.monster-invalid[for="extra.password_confirm"],
 #form_accountsmanager_account_admins .admin-element-edit .edit-admin-password-div label.monster-invalid[for="extra.password_confirm"] {
-	margin-top: 40px;
+	margin-top: 30px;
+	margin-left: 145px; /* Warning: This will be messed up if the screen is too small due to bootstraps responsive spans; */
 }
 
 #form_accountsmanager_account_admins .admin-empty-msg {
@@ -615,8 +509,8 @@
 	margin: 10px 0px;
 }
 
-#accountsmanager_serviceplans_tab .serviceplans-container .serviceplans-maintenance .controls button:not(:first-of-type) {
-	margin-left: 10px;
+#accountsmanager_serviceplans_tab .serviceplans-container .serviceplans-maintenance .controls button {
+	cursor: pointer;
 }
 
 /***** Edit: Limits *****/
@@ -624,6 +518,10 @@
 
 #accountsmanager_limits_tab {
 	padding:20px;
+}
+
+#accountsmanager_limits_tab .buttons-div {
+	margin: 20px 0 0 0;
 }
 
 #accountsmanager_callrestrictions_form {
@@ -639,86 +537,92 @@
 	min-width: 500px;
 }
 
-.limits-tab-container .section-slider .slider-title {
-	display: inline-block;
-	min-width: 200px;
+.limits-tab-container .slider-value {
+	background: #22ccff;
+	border: 1px solid #FFFFFF;
+	box-shadow: 1px 1px 4px #CCCCCC;
+	color: #FFFFFF;
+	height: 40px;
+	margin-right: 10px;
+	text-align: center;
+	width: 50px;
+}
+
+.limits-tab-container .slider-value:after {
+	border-color: #22CCFF transparent;
+	border-style: solid;
+	border-width: 7px 7px 0;
+	content: "";
+	display: block;
+	left: 18px;
+	position: relative;
+	width: 0;
+}
+
+.limits-tab-container .total-amount {
+	font-weight: 600;
+}
+
+.limits-tab-container .slider-div .ui-slider-range,
+.limits-tab-container .slider-div .ui-slider-handle {
+	background-color: #22ccff;
+}
+
+.limits-tab-container .slider-div .ui-slider-handle.ui-state-hover,
+.limits-tab-container .slider-div .ui-slider-handle.ui-state-focus {
+	font-weight: 600;
+	color: inherit;
+}
+
+.limits-tab-container .section-button {
+	text-align: right;
+}
+
+.limits-tab-container .section-button .update-limits {
+	margin-top: 50px;
+}
+
+.limits-tab-container .section-slider-value{
+	max-width: 580px;
+}
+
+.limits-tab-container .section-slider {
+	margin-top: 60px;
+}
+
+.limits-tab-container  .slider-title {
+	width: 200px;
+	float: left;
+	margin: -5px 20px 0 0;
 }
 
 .limits-tab-container .section-slider .slider-wrapper {
-	display: inline-block;
 	width: 300px;
-	margin-left: 20px;
-	padding-top: 50px;
+	float: left;
+}
+
+.limits-tab-container .slider-value-wrapper {
+	display: block;
+	position: absolute;
+	top: -50px;
+	left: -17px;
+	width: 220px;
+}
+
+.limits-tab-container .slider-value-wrapper > * {
+	float: left;
+	line-height: 40px;
+}
+
+.limits-tab-container  .value-slider {
 	position: relative;
-}
-
-.limits-tab-container .section-slider .slider-wrapper .ui-slider {
-	border: solid 1px #c0c0c9;
-	height: 6px;
-	background: #fff;
-}
-
-.limits-tab-container .section-slider .slider-wrapper .ui-slider .ui-slider-handle {
-	height: 18px;
-	width: 18px;
-	border-radius: 10px;
-	top: -7px;
-	background: #f0f0f9;
-	border: solid 1px #c0c0c9;
-	cursor: pointer;
-}
-
-.limits-tab-container .section-slider .slider-wrapper .ui-slider-range {
-	background: #22a5ff;
-}
-
-.limits-tab-container .section-slider .slider-wrapper .slider-value {
-	position: absolute;
-	top: 0px;
-	color: #22a5ff;
-	border: solid 1px #0297e5;
-	padding: 6px 4px;
-	font-size: 24px;
-	font-weight: 600;
-	transform: translateX(-50%);
-	margin-left: 0.5%;
-	background: #fff;
-}
-
-.limits-tab-container .section-slider .slider-wrapper .slider-value:after {
-	border-color: #fff transparent;
-	border-style: solid;
-	border-width: 9px 6px 0;
-	content: "";
-	left: 50%;
-	bottom: -7px;
-	transform: translateX(-50%);
-	position: absolute;
-	
-}
-
-.limits-tab-container .section-slider .slider-wrapper .slider-value:before {
-	border-color: #22a5ff transparent;
-	border-style: solid;
-	border-width: 9px 6px 0;
-	content: "";
-	left: 50%;
-	bottom: -9px;
-	transform: translateX(-50%);
-	position: absolute;
-}
-
-.limits-tab-container .section-slider .slider-total-amount {
-	display: inline-block;
-	margin-left: 20px;
-	font-weight: 600;
-	color: #22a5ff;
+	display: block;
 }
 
 .limits-tab-container .call-restrictions-div > div {
 	background-color: #FFF;
 	border: solid 1px #ccc;
-	border-radius: 2px;
+	border-radius: 4px;
 	padding: 10px;
 }
 
@@ -739,6 +643,10 @@
 
 .limits-tab-container .call-restrictions-div .call-restrictions-element input {
 	margin: 0 5px 0 0;
+}
+
+.limits-tab-container .call-restrictions-div .call-restrictions-element i {
+	margin-left: 5px;
 }
 
 .limits-tab-container .call-restrictions-div .manage-credit-div > div {
@@ -779,7 +687,7 @@
 .limits-tab-container .call-restrictions-div .credit-balance {
 	font-size: 20px;
 	font-weight: bold;
-	color: #22a5ff;
+	color: #22ccff;
 }
 
 /***************** Wizard *********************/
@@ -829,15 +737,6 @@
 #accountsmanager_new_account_form .account-settings-step .new-admin-div .btn-group button {
 	width: 50%;
 }
-#accountsmanager_new_account_form .account-settings-step .new-admin-div .btn-group button:last-child {
-	margin-left: -1px;
-	border-top-left-radius: 0px;
-	border-bottom-left-radius: 0px;
-}
-#accountsmanager_new_account_form .account-settings-step .new-admin-div .btn-group button:first-child {
-	border-top-right-radius: 0px;
-	border-bottom-right-radius: 0px;
-}
 
 #accountsmanager_new_account_form .account-settings-step .new-admin-div .btn-group {
 	margin-top: 10px;
@@ -846,16 +745,6 @@
 
 #accountsmanager_new_account_form .account-settings-step .new-admin-div i.help-popover {
 	margin-left: 10px;
-}
-
-#accountsmanager_new_account_form .account-settings-step .new-admin-div input[name="user.password"] {
-	margin-bottom: 0px;
-}
-#accountsmanager_new_account_form .account-settings-step .new-admin-div input[name="extra.confirmPassword"] {
-	margin-bottom: 25px;
-}
-#accountsmanager_new_account_form .account-settings-step .new-admin-div .monster-checkbox {
-	margin-top: 20px;
 }
 
 #accountsmanager_new_account_form .error-message {
@@ -868,12 +757,12 @@
 	margin-bottom: 20px;
 }
 
-#accountsmanager_new_account_form .account-settings-step .manual-realm.inactive {
+#accountsmanager_new_account_form .account-settings-step .manual-realm {
 	display: none;
 }
 
 #accountsmanager_new_account_form .account-settings-step .manual-realm input[type="text"]{
-	width: 190px;
+	width: 170px;
 }
 
 #accountsmanager_new_account_form .account-settings-step .realm-link {
@@ -894,10 +783,6 @@
 	line-height: 20px;
 }
 
-#accountsmanager_new_account_form label.monster-invalid[for="user.password"] {
-	margin-top: 25px;
-}
-
 #accountsmanager_new_account_form .add-credit-container label.monster-invalid {
 	margin-top: 0px;
 }
@@ -909,7 +794,7 @@
 }
 #accounts_manager_view .wizard .processing-div span {
 	font-size: 20px;
-	color: #22a5ff;
+	color: #22ccff;
 	line-height: 46px;
 	vertical-align: bottom;
 	font-weight: 600;
@@ -941,9 +826,6 @@
 .restrictions-tab-container .restrictions-menu {
 	float: left;
 	width: 240px;
-	background-color: #f0f0f9;
-	border: 1px solid #c0c0c9;
-	padding-bottom: 20px;
 }
 
 .restrictions-tab-container .restrictions-right {
@@ -955,57 +837,82 @@
 	margin-bottom: 0;
 }
 
+.restrictions-tab-container .restrictions-menu .nav li.nav-header {
+	border-right: solid 1px #22ccff;
+}
+
+.restrictions-tab-container .restrictions-menu .nav li:not(.nav-header) {
+	background-color: #eceaeb;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+
+.restrictions-tab-container .restrictions-menu .nav li:not(.nav-header):last-child {
+	border-bottom: 1px solid #ccc;
+}
+
 .restrictions-tab-container .restrictions-menu .nav li {
-	font-size: 14px;
-	font-weight: 600;
-	padding: 10px 20px;
-	border-right: 2px solid transparent;
+	height: 60px;
+	line-height: 60px;
+	font-weight: 700;
+	font-size: 16px;
 }
 
 .restrictions-tab-container .restrictions-menu .nav > li.active {
 	background-color: #fff !important;
-	border-right-color: #22a5ff;
-}
-
-.restrictions-tab-container .restrictions-menu .nav > li.active a > * {
-	color: #22a5ff;
+	border-right: 1px solid #fff;
 }
 
 .restrictions-tab-container .restrictions-menu .nav > li:not(.nav-header):hover {
-	background-color: #e0e0e9;
+	color: #777777;
 }
 
 .restrictions-tab-container .restrictions-menu .nav li.nav-header {
-	padding: 0;
-	padding-bottom: 5px;
-	margin: 35px 20px 10px 20px;
-	border-bottom: solid 1px #c0c0c9;
-	text-transform: uppercase;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-weight: bold;
+	height: 20px;
+	letter-spacing: 2px;
+	line-height: 20px;
+	margin: 0;
+	padding: 10px 30px;
+	text-shadow: 1px 0 1px #333333;
+	text-transform: uppercase
 }
 
 .restrictions-tab-container .restrictions-menu .nav a {
-	background: none !important;
-	text-shadow: none;
-	color: #303039;
-	padding: 0;
+	color: #bbbbbb;
+	height: 40px;
+	line-height: 40px;
+	padding: 10px 0;
 	margin: 0;
-	height: 22px;
-	overflow: hidden;
-	white-space: nowrap;
 }
 
-.restrictions-tab-container .restrictions-menu .nav li[data-content] {
-	cursor: pointer;
+.restrictions-tab-container .restrictions-menu .nav a:hover {
+	background-color: #eceaeb;
 }
 
-.restrictions-tab-container .restrictions-menu .nav li[data-content] i.fa-caret-right {
+.restrictions-tab-container .restrictions-menu .nav a.enabled {
+	color: #777;
+}
+
+.restrictions-tab-container .restrictions-menu .nav li[data-content] i.icon-caret-right {
 	position: relative;
-	top: 3px;
-	right: 0px;
+	top: 11px;
+	right: 5px;
+}
+
+.restrictions-tab-container .restrictions-menu .nav li[data-content] a.enabled {
+	color: #22ccff;
 }
 
 .restrictions-tab-container .restrictions-menu .nav li[data-content] a.enabled:hover {
 	background-color: #fff;
+}
+
+.restrictions-tab-container .restrictions-menu .nav a .icheckbox_flat {
+	margin-left: 10px;
 }
 
 /* RESTRICTIONS CONTENT */
@@ -1020,12 +927,12 @@
 
 .restrictions-tab-container .restrictions-right > div.active {
 	display: block;
-	height: 684px;
+	height: 567px;
 	padding: 20px 30px;
 	background-color: #fff;
-	border-top:  1px solid #c0c0c9;
-	border-bottom:  1px solid #c0c0c9;
-	border-right:  1px solid #c0c0c9;
+	border-top:  1px solid #ccc;
+	border-bottom:  1px solid #ccc;
+	border-right:  1px solid #ccc;
 }
 
 /************ Notes Tab ************/
@@ -1038,15 +945,4 @@
 
 #accountsmanager_carrier_tab {
 	padding: 20px;
-}
-
-/************ Delete Account Confirmation Dialog ***************/
-.delete-account-dialog {
-	padding: 15px;
-}
-
-.delete-account-dialog #delete_input {
-	margin-top: 5px;
-	margin-left: 10px;
-	margin-bottom: 0px;
 }

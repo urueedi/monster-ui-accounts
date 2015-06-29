@@ -1,0 +1,274 @@
+{
+       "account": {
+                "fraud": {
+                        "title": "Konto-Kostenschutz",
+                        "perdaydefault": "20.00",
+                        "permindefault": "0.26",
+                        "perday": "Kontoschutz pro Tag",
+                        "perday_descript": "Maximalkosten pro Tag",
+                        "permin": "Kontoschutz pro Anruf",
+                        "permin_descript": "Maximalkosten pro Minute"
+                },
+                "provision": {
+                        "title": "Automatische Gerätekonfiguration",
+                        "urlPass": "URL-Passwort",
+                        "provisionDomain": "Domainschutz",
+                        "provisionPass": "Telefon Passwort",
+                        "supportProvision": "Automatische Gerätekonfiguration ein",
+                        "provisionEnabled": "Ist Eingeschaltet",
+                        "provisionDisabled": "Ist Ausgeschaltet"
+                }
+        },
+        "servicePlanDetails": {
+                "rate": "Monatlich:",
+                "activationCharge": "Aktivierungskosten:",
+                "exceptions": "Ausnahmen:",
+                "planLines": {
+                        "phone_numbers": "Abonnement Nummern",
+                        "number_services": "Abonnement Zusatzoptionen",
+                        "apps": "Abonnement Apps",
+                        "limits": "Abonnement Pauschale-Verbindungen",
+                        "devices": "Abonnement Geräte",
+                        "users": "Abonnement Benutzer",
+                        "supports": "Abonnement Support",
+                        "connects": "Abonnement Internetanschluss"
+                },
+                "noServicePlan": "Kein Tarifplan ausgewählt.",
+                "CH_Numbers": "CH Nummer",
+                "CH_Tollfree": "CH Gratisnummer",
+                "Two-Way_Trunk": "Gleichzeitige Verbindungen",
+                "Inbound_Trunk": "Eingehende Verbindungen",
+                "Outbound_Trunk": "Ausgehende Verbindungen",
+                "Outbound_CNAM": "Ausgehendes Telefonbuch",
+                "Inbound_CNAM": "Eingehendes Telefonbuch",
+                "Port_Request_Single": "Portierung Auftrag",
+                "Port_Request_DID": "Portierung Auftrag (DID Blöcke)",
+                "Emergency_Service": "Notfall Nummern",
+                "SIP_Device": "SIP Geräte Anschluss",
+                "User": "System Benutzer",
+                "cellphone": "Mobile",
+                "landline":  "Festnetz",
+                "sip_phone": "SIP-Anschlüsse"
+        },
+	"addAccount": "Neues Konto zufügen",
+	"editSetting": "Ändern",
+	"saveChanges": "Speichern",
+	"closeSetting": "Schliessen",
+	"disable": "Ausschalten",
+	"disabled": "Aus",
+	"active": "Aktiv",
+	"delete": "Löschen",
+	"enable": "Einschalten",
+	"add": "Zufügen",
+	"save": "Speichern",
+	"update": "Erneuern",
+	"none": "Kein",
+	"month": "Monat",
+	"missingAccount": "Konto nicht gefunden",
+	"disableAccount": "Konto deaktivieren",
+	"enableAccount": "Konto aktivieren",
+	"deleteAccount": "Konto löschen",
+	"useAccount": "Benutze Konto",
+	"changesSaved": "Änderungen speichern!",
+	"createdOn": "Zufügt am",
+	"accountStatus": "Konto Status",
+	"accountId": "Konto ID",
+	"accountName": "Konto Name",
+	"accountRealm": "Konto Realm",
+	"accountTimezone": "Zeitzone",
+	"accountLanguage": "Sprache",
+	"accountTimezoneTitle": "Zeitzone & Sprache",
+	"accountAdmins": "Administratoren",
+	"noAdminMessage": "Dieses Konto hat kein Administrator",
+	"noUserMessage": "Dieses Konto hat kein aktiver Benutzer",
+	"newAdmin": "Neuer Administrator zufügen",
+	"newUser": "Neuer Benutzer",
+	"existingUser": "Aktiver Benutzer",
+	"autogenPassword": "Passwort erzeugen",
+	"manuallyTypePassword": "Passwort eingeben",
+	"billingContact": {
+		"label": "Rechnungskontakt",
+		"name": "Rechnungskontakt Name",
+		"address": "Rechnungsadresse",
+		"zip": "Postleitzahl",
+		"city": "Ortschaft",
+                "usepostBilling": "Postrechnung",
+                "payExtra": "Rechnung per Post zusätzlich",
+                "usepostbillingDisabled": "Postrechnung Aus",
+                "usepostbillingEnabled": "Postrechnung Ein",
+		"email": "Rechnungskontakt Email",
+		"number": "Telefonnummer"
+	},
+	"technicalContact": {
+		"label": "Technischer Kontakt",
+		"name": "Name bei Technikfragen",
+		"email": "Email bei Technikfragen",
+		"number": "Telefonnummer"
+	},
+	"chargeReminder": {
+		"line1": "Wenn Sie wiederkehrende Leistungen geändert haben, werden die Gebühren Anteilig für Ihren Rechnungszyklus verrechnet. Der Betrag wird jetzt von Ihrem Konto beglichen.",
+                "line2": "Bitte bestägigen, dass Sie dies durchführen wollen?"
+	},
+	"tabTitles": {
+		"overview": "Überblick",
+		"servicePlans": "Abonnementsplan",
+		"limits": "Limiten",
+		"restrictions": "Beschränkungen",
+		"notes": "Notizen"
+	},
+	"classifiers": {
+		"unknown": {
+			"name": "Alle andern Nummern",
+			"help": "Wählen Sie diese Option, wenn dieses Konto ohne Einschränkung wählen soll (Auch Nummern die nicht im Abonnementsplan enthalten sind)"
+		}
+	},
+	"activeServicePlan": "Aktiver Abonnementsplan",
+	"servicePlanMaintenance": "Wartung des Abonnementsplanes",
+	"servicePlanReconciliation": {
+		"button": "Akzeptieren",
+		"tooltip": "Versichern Sie sich, dass die Zahlen korrekt sind."
+	},
+	"servicePlanSynchronization": {
+		"button": "Abgleichen",
+		"tooltip": "Aktualisieren Sie die Zahlungsinformationen auf der Kreditkarteninformationen."
+	},
+	"servicePlanWizardLegend": "Wählen Sie ein Abonnementsplan für dieses Konto:",
+	"servicePlanResellerOnly": "Nur Wiederverkäufer sind Berechtigt die Abonnemetspläne zu ändern.",
+	"trunksLegend": "Beschränkung der Ein- und Ausgehenden Verbindungen",
+	"twowayTrunks": "Verbindungen Total",
+	"inboundTrunks": "Eingehende Verbindungen",
+	"outboundTrunks": "Ausgehende Verbindungen",
+	"callRestrictionsLegend": "Verbindungsbeschränkungen",
+	"callRestrictionsTitle": "Dieses Konto kann Verbindungen herstellen zu...",
+	"balanceTitle": "Einstellungen der Kreditlimiten",
+	"balancePerMinute": "Kredit Kontostand: ",
+	"balanceTooltip": "Diese Kreditlimite wird für Verbindungen im Minutentarif verwendete (Kostenpflichtige Verbindungen)",
+	"addToBalance": "Zufügen einer Zahlung:",
+	"allowPrepay": "Erlaube Kunde den Minutentarif wenn die Limite aufgebraucht ist, und verrechne im Minutentarif Zusätzlich.",
+	"addAdminLink": {
+		"toggleOn": "Ein Administrator zum Konto zufügen",
+		"toggleOff": "Administrator wird nicht benötigt"
+	},
+	"adminLabels": {
+		"firstName": "Administrator Vorname",
+		"lastName": "Administrator Nachname",
+		"email": "Administrator Email-Adresse",
+		"emailTooltip": "Diese Email-Adresse wird als Benutzername für das Anmelden des Monster-UI benutzt.",
+		"number": "Administrator Nummer",
+		"password": "Administrator Passwort",
+		"confirm": "wiederhole Passwort"
+	},
+	"adminPlaceholders": {
+		"firstName": "Vorname",
+		"lastName": "Nachname",
+		"email": "Email-Adresse",
+		"number": "Telefonnummer",
+		"password": "Passwort",
+		"confirm": "wiederholen"
+	},
+	"wizardStepTitles": {
+		"setupAccount": "Neues Konto einrichten",
+		"servicePlan": "Wähle ein Abonnement",
+		"limits": "Beschränkungen",
+		"restrictions": "Berechtigungen"
+	},
+	"wizardErrorMessages": {
+		"pleaseCorrect": "Bitte die folgenden Fehler beheben:",
+		"accountMandatoryFields": "Der Kontoname und das Realm-Feld sind obligatorisch.",
+		"adminMandatoryFields": "Wenn Sie einen Administrator zufügen sind die Vor-, Nachnamen und Email-Adressen obligatorisch.",
+		"adminPasswordError": "Das Passwort muss mindestens 6 Zeichen lang sein, und aus Buchstaben und Zahlen sein.",
+		"adminPasswordConfirmError": "Die Passwort Wiederholung stimmt nicht überein.",
+		"incorrectBalanceFormat": "Das Format für eine Zahlungsangabe entspricht nicht dem Format, Sie müssen eine Zahl mit 2 Stellen nach dem Komma eingeben.",
+		"balanceMinimumAmount": "Der minimale Betrag für eine Zahlung beträgt 5.00."
+	},
+	"wizardProcessingMessage1": "Bitte warten...",
+	"wizardProcessingMessage2": "Bitte warten, während das Konto erstellt wird.",
+	"autogenPasswordPopup": {
+		"message": "Das Passwort für den Administrator {{adminName}} wurde automatisch erzeugt. DAS PASSWORT WIRD NUR DIESES MAL ANGEZEIGT. Sie sollten es sich unbedingt aufschreiben, oder einprägen.",
+		"login": "Anmelden:",
+		"password": "Passwort:"
+	},
+	"deleteUserConfirm": "Dieser Benutzer wird vollständig gelöscht. Weiter?",
+	"deleteAccountConfirm": "Dieses Konto wird vollständig gelöscht. Weiter?",
+	"toastrMessages": {
+		"servicePlanUpdateSuccess": "Aktive Abonnemente wurden erfolgreich aktualisiert!",
+		"servicePlanUpdateError": "Ein unerwarteter Fehler ist aufgetreten! Bitte wiederholen Sie den Vorgang.",
+                "servicePlanReconciliationSuccess": "Überleitung erfolgreich abgeschlossen!",
+                "servicePlanReconciliationError": "Fehler beim Versöhnungsprozess aufgetreten Bitte versuchen Sie es später noch einmal!",
+                "servicePlanSynchronizationSuccess": "Synchronisation erfolgreich abgeschlossen!",
+                "servicePlanSynchronizationError": "Es ist ein Fehler bei der Synchronisation aufgetreten. Bitte versuchen Sie es später noch einmal!",
+                "limitsUpdateSuccess": "Limiten erfolgreich aktualisiert!",
+                "limitsUpdateError": "Während der Aktualisierung der Limiten ist ein unerwarteter Fehler ist aufgetreten. Versuchen Sie es später erneut.",
+                "creditAddSuccess": "Zahlung wurde erfolgreich dem aktuellen Kontostand hinzugefügt!",
+                "creditAddError": "Ein unerwarteter Fehler ist beim Hinzufügen der Zahlung aufgetreten. Versuchen Sie es später erneut.",
+                "deleteAccountError": "Beim Löschen des Kontos ist ein Fehler ist aufgetreten, versuchen Sie es erneut.",
+                "NewAccount": {
+                        "accountError": "Ein unerwarteter Fehler beim Erstellen der Rechnung aufgetreten.",
+                        "adminError": "Das Konto des Administrator konnte nicht erstellt werden.",
+                        "limitsError": "Fehler beim Einrichten der Limiten ist aufgetreten.",
+                        "forbiddenLimitsError": "Es ist nicht erlaubt, diese Limiten zu setzen. Bitte wenden Sie sich an Ihren Wiederverkäufer..",
+                        "creditError": "Es ist ein Fehler bei der Gutschrift auf das Konto aufgetreten.",
+                        "servicePlanError": "Bei der Zuordnung der Abonnemente auf das Konto ist ein Fehler aufgetreten."
+                },
+                "uiRestrictionsUpdateSuccess": "Die UI-Einschränkungen wurden erfolgreich aktualisiert!",
+                "uiRestrictionsUpdateError": "Ein unerwarteter Fehler ist aufgetreten, bei der Aktualisierung der UI-Beschränkungen. Versuchen Sie es später erneut.",
+                "notesUpdateSuccess": "Notiz erfolgreich aktualisiert!",
+                "notesUpdateError": "Bei der Aktualisierung der Tarife ist ein unerwarteter Fehler ist aufgetreten, versuchen Sie es später erneut.",
+                "triggerMasquerading": "Ihr Konto {{accountname}} ist jetzt für Ihre Kunden nicht sichtbar",
+                "restoreMasquerading": "Ihr Konto ist wieder sichtbar."
+        },
+        "uiRestrictionsLegend": "Wählen Sie, was Ihre Kunden sehen können",
+	"uiRestrictionsTooltip": "Sie können die Ansicht der Kontoanzeige für Ihre Unterkonten beschränken. Dadurch kann dieses Unterkonto nur die ihm Freigegebenen Menüs sehen.",
+	"uiRestrictionsMenu": {
+		"settings": "Einstellungen",
+		"user": "Benutzer",
+		"account": "Konto",
+		"billing": "Rechnung",
+		"creditCard": "Kreditkarte",
+		"transactions": "Überweisungen",
+		"servicePlan": "Abonnement",
+		"perMinute": "Minutentarif",
+		"trunking": "Trunking",
+		"inbound": "Eingehend",
+		"outbound": "Ausgehend"
+	},
+	"uiRestrictionsExtraSettings": {
+		"perMinute": {
+			"legend":"Zahlungseinstellungen",
+			"showCreditInfo":"Zeige Kreditinformationen",
+			"showMinutesInfo": "Zeige Minuteninformationen"
+		}
+	},
+	"validationMessages": {
+		"invalidPasswordConfirm": "Die Passwörter stimmen nicht überein."
+	},
+	"notesLegend": "Notizen für dieses Konto",
+	"landingContent": [
+		"Sie können ein Unterkonto bearbeiten, oder ein neues erstellen.",
+		"",
+		""
+	],
+	"carrier": {
+		"title": "Carrier",
+		"useBlended": {
+			"friendlyName": "Benutze Global Carrier",
+			"help": "Durch Auswahl von \"Benutze Global Carrier\", werden alle Anrufe über die Carrier des Hauptkontos hergestellt."
+		},
+		"useReseller": {
+			"friendlyName": "Benutze {{variable}} Carrier",
+			"help": "Durch Auswahl von \"Benutze {{variable}} Carrier\", werden alle Anrufe nur über den Carrier {{variable}}' hergestellt."
+		},
+		"byoc": {
+			"friendlyName": "Benutze Dein Carrier",
+			"help": "Durch Auswahl von \"Benutze Dein Carrier\", werden alle Anrufe nur über den selbst erstellten Carrier hergestellt."
+		},
+		"saveSuccess": "Sie haben erfolgreich die Einstellungen für Ausgehende Verbindungen dieses Kontos aktualisiert!",
+		"huntError": "Ihre Verbindungen die keinem Muster entsprechen, werden momentan nicht in diesem UI unterstützt.!"
+	},
+        "accountType": "Konto Typ",
+        "reseller": "Wiederverkäufer",
+        "standard": "Standard",
+        "carrierTab": "Carrier",
+        "sentEmailPopup": "Ein eMail mit den Anmeldedaten wurde an {{email}} gesendet.",
+        "disabledAddCreditTooltip": "Braintree wird benötigt um eine Aufladung zu tätigen. Oder kontaktieren Sie Ihren Administrator für mehr Informationen."
+}

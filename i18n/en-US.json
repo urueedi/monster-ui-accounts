@@ -1,4 +1,26 @@
 {
+        "account": {
+                "fraud": {
+                        "title": "Fraud Accountsecurity",
+                        "perdaydefault": "20.00",
+                        "permindefault": "0.26",
+                        "perday": "Accountsecurity per day",
+                        "perday_descript": "Maximalcost allowed per day",
+                        "perday_descript_short": "Allowed per day",
+                        "permin": "Accountsecurity per Min ",
+                        "permin_descript": "Maximalcost allowed per minute",
+                        "permin_descript_short": "Allowed per minute"
+                },
+                "provision": {
+                        "title": "Automatic Devicesettings",
+                        "urlPass": "URL-Password",
+                        "provisionDomain": "Domainrestriction",
+                        "provisionPass": "Phone Admin Password",
+                        "supportProvision": "Automatic Devicesetting on",
+                        "provisionEnabled": "Is Enabled",
+                        "provisionDisabled": "Is Disabled"
+                }
+        },
 	"addAccount": "Add New Account",
 	"editSetting": "Edit",
 	"saveChanges": "Save Changes",
@@ -38,6 +60,13 @@
 	"billingContact": {
 		"label": "Billing Contact",
 		"name": "Billing Contact Name",
+                "address": "Billing Address",
+                "zip": "ZIP",
+                "city": "City",
+                "usepostBilling": "use Postbilling",
+                "payExtra": "pay for postbilling extra",
+                "usepostbillingDisabled": "Postbilling OFF",
+                "usepostbillingEnabled": "Postbilling ON",
 		"email": "Billing Contact Email",
 		"number": "Phone Number"
 	},

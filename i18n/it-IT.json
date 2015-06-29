@@ -1,0 +1,230 @@
+{
+       "servicePlanDetails": {
+                "rate": "tariffe",
+                "activationCharge": "costi capitalizzati",
+                "exceptions": "eccezioni",
+                "planLines": {
+                        "phone_numbers": "numero di telefono",
+                        "number_services": "numeri di abbonamento",
+                        "limits": "limite",
+                        "devices": "dispositivi",
+                        "users": "utente",
+                        "apps": "Apps",
+                        "supports": "Support",
+                        "connects": "Internet"
+                },
+                "noServicePlan": "nessun piano tariffario scelto.",
+                "CH_Numbers": "CH Number",
+                "CH Tollfree": "CH Tollfree",
+                "Two-Way_Trunk": "Two-Way Trunk",
+                "Inbound_Trunk": "Incoming Trunk",
+                "Outbound_Trunk": "Outbound Trunk",
+                "Outbound_CNAM": "CNAM Phonebook",
+                "Inbound_CNAM": "CNAM Phonebook",
+                "Port_Request_Single": "Port Request Single",
+                "Port_Request_DID": "Port Request DID",
+                "Emergency_Service": "Emergency Service",
+                "SIP_Device": "SIP Device",
+                "User": "System User"
+        },
+	"addAccount": "aggiungere un nuovo account",
+	"editSetting": "modifica",
+	"saveChanges": "salva i cambiamenti",
+	"closeSetting": "da vicino",
+	"disable": "disabilitare",
+	"disabled": "diversamente abili",
+	"active": "attivo",
+	"delete": "cancellare",
+	"enable": "permettere",
+	"add": "aggiungere",
+	"save": "salvare",
+	"update": "aggiornare",
+	"none": "nessuno",
+	"month": "il mese",
+	"missingAccount": "conto mancante",
+	"disableAccount": "disattivare questo account",
+	"enableAccount": "attivare questo account",
+	"deleteAccount": "eliminare questo account",
+	"useAccount": "utilizzare l'account",
+	"changesSaved": "modifiche salvate!",
+	"createdOn": "creato",
+	"accountStatus": "stato del conto",
+	"accountId": "account id",
+	"accountName": "nome utente",
+	"accountRealm": "conto regno",
+	"accountTimezone": "fuso orario",
+	"accountLanguage": "lingua",
+	"accountTimezoneTitle": "fuso orario e lingua",
+	"accountAdmins": "amministratori di account",
+	"noAdminMessage": "questo account doesnt ha alcun amministratore",
+	"noUserMessage": "questo account doesnt ha alcun utente normale",
+	"newAdmin": "aggiungere un nuovo amministratore",
+	"newUser": "nuovo utente",
+	"existingUser": "utente esistente",
+	"autogenPassword": "auto- generare la password",
+	"manuallyTypePassword": "manualmente tipo di password",
+	"billingContact": {
+		"label": "contatto per la fatturazione",
+		"name": "fatturazione nome del contatto",
+		"email": "contatto per la fatturazione e-mail",
+		"number": "numero di telefono"
+	},
+	"technicalContact": {
+		"label": "contatto tecnico",
+		"name": "nome del contatto tecnico",
+		"email": "e-mail di contatto tecnico",
+		"number": "numero di telefono"
+	},
+	"chargeReminder" : {
+		"line1": "sarà immediatamente addebitato sul tuo file carta di credito per le modifiche apportate. se avete cambiato i servizi ricorrenti, nuove accuse saranno pro-rata per il ciclo di fatturazione.",
+		"line2": "sei sicuro di voler continuare ?"
+	},
+	"tabTitles": {
+		"overview": "panoramica",
+		"servicePlans": "piani di servizio",
+		"limits": "limiti",
+		"restrictions": "restrizioni",
+		"notes": "gli appunti"
+	},
+	"classifiers": {
+		"unknown": {
+			"name": "diversi dai precedenti",
+			"help": "selezionare questa opzione quando si desidera questo account per effettuare chiamate a qualsiasi numero diverso da quelli menzionati nella lista. (quando il formato del numero è sconosciuto al sistema.)"
+		}
+	},
+	"activeServicePlan": "piano di servizio attivo",
+	"servicePlanMaintenance": "piano di servizio di manutenzione",
+	"servicePlanReconciliation": {
+		"button": "riconciliare",
+		"tooltip": "assicurare che le quantità di oggetti fatturabili siano corrette."
+	},
+	"servicePlanSynchronization": {
+		"button": "sincronizzare",
+		"tooltip": "aggiornare le informazioni di fatturazione sul processore carta di credito."
+	},
+	"servicePlanWizardLegend": "scegliere un piano di servizio per questo account",
+	"servicePlanResellerOnly": "solo rivenditori sono autorizzati a gestire i piani di servizio.",
+	"trunksLegend": "impostare dei limiti per le chiamate in entrata e in uscita simultanee inclusi",
+	"twowayTrunks": "tronchi a due vie",
+	"inboundTrunks": "tronchi in entrata",
+	"outboundTrunks": "tronchi in uscita",
+	"callRestrictionsLegend": "restrizioni di chiamata",
+	"callRestrictionsTitle": "questo account può effettuare chiamate ai...",
+	"balanceTitle": "gestire saldo",
+	"balancePerMinute": "al saldo minuto",
+	"balanceTooltip": "questo credito sarà utilizzato per fare (piano) le chiamate al minuto, chiamate internazionali e ricevere chiamate gratuite.",
+	"addToBalance": "aggiungere al saldo corrente",
+	"allowPrepay": "consentono ai clienti di effettuare chiamate al minuto che vanno oltre il limite di cui sopra, e Bill li il costo per minuto di conversazione",
+	"addAdminLink": {
+		"toggleOn": "aggiungere un amministratore al conto",
+		"toggleOff": "Ho cambiato idea, che ha bisogno di un amministratore ?"
+	},
+	"adminLabels": {
+		"firstName": "amministratore nome",
+		"lastName": "amministratore cognome",
+		"email": "Indirizzo e-mail amministratore",
+		"emailTooltip": "Questo indirizzo email servirà come il nome utente di log- in per monster-ui.",
+		"number": "numero di contatto Admin",
+		"password": "password di amministratore",
+		"confirm": "conferma password"
+	},
+	"adminPlaceholders": {
+		"firstName": "nome",
+		"lastName": "cognome",
+		"email": "indirizzo e-mail",
+		"number": "numero di telefono",
+		"password": "parola d'ordine",
+		"confirm": "confermare"
+	},
+	"wizardStepTitles": {
+		"setupAccount": "impostare un account",
+		"servicePlan": "scegliere piano di servizio",
+		"limits": "restrizioni di chiamata",
+		"restrictions": "permessi"
+	},
+	"wizardErrorMessages": {
+		"pleaseCorrect": "Correggi i seguenti errori",
+		"accountMandatoryFields": "il nome dell'account e regno campi sono obbligatori.",
+		"adminMandatoryFields": "il primo, il nome, cognome e indirizzo di posta elettronica sono obbligatori quando si aggiunge un nuovo amministratore.",
+		"adminPasswordError": "la password deve essere lunga almeno 6 caratteri e includere una lettera e un numero.",
+		"adminPasswordConfirmError": "la password e la sua conferma non corrispondono.",
+		"incorrectBalanceFormat": "formato non corretto per l'equilibrio di credito, è possibile inserire solo un numero con un massimo di 2 decimali.",
+		"balanceMinimumAmount": "l'importo minimo per saldo a credito è di $ 5,00."
+	},
+	"wizardProcessingMessage1": "Richiesta di trasformazione...",
+	"wizardProcessingMessage2": "Per favore attendi che il conto è stato creato.",
+	"autogenPasswordPopup": {
+		"message": "una password è ben automaticamente generato per l'amministratore { { ADMINNAME }}. questa è l'unica volta sarà visualizzata la password, è necessario memorizzare o scrivere.",
+		"login": "login",
+		"password": "parola d'ordine"
+	},
+	"deleteUserConfirm": "questo sarà cancellato definitivamente. continuare?",
+	"deleteAccountConfirm": "l'account verrà eliminato definitivamente. continuare?",
+	"toastrMessages": {
+		"servicePlanUpdateSuccess": "piano di servizio attivo aggiornato con successo!",
+		"servicePlanUpdateError": "si è verificato un errore imprevisto! riprova, per favore.",
+		"servicePlanReconciliationSuccess": "riconciliazione completato con successo!",
+		"servicePlanReconciliationError": "Si è verificato un errore durante la procedura di riconciliazione! per favore riprova più tardi.",
+		"servicePlanSynchronizationSuccess": "Sincronizzazione completato con successo!",
+		"servicePlanSynchronizationError": "Si è verificato un errore durante la procedura di sincronizzazione! per favore riprova più tardi.",
+		"limitsUpdateSuccess": "limiti aggiornati con successo!",
+		"limitsUpdateError": "un errore imprevisto si è verificato durante l'aggiornamento dei limiti, si prega di riprovare più tardi.",
+		"creditAddSuccess": "credito aggiunto correttamente al saldo corrente!",
+		"creditAddError": "verificato un errore imprevisto durante l'aggiunta di credito, si prega di riprovare più tardi.",
+		"deleteAccountError": "è verificato un errore durante l'eliminazione del conto, si prega di riprovare.",
+		"newAccount": {
+			"accountError": "un errore imprevisto durante la creazione dell'account.",
+			"adminError": "Non è stato possibile creare l'amministratore dell'account.",
+			"limitsError": "è verificato un errore durante l'impostazione dei limiti.",
+			"forbiddenLimitsError": "non ti è permesso di impostare tali limiti. si prega di contattare il proprio rappresentante di vendita.",
+			"creditError": "è verificato un errore durante l'aggiunta di credito a questo nuovo account, assicurarsi che i dati della carta di credito è valida.",
+			"servicePlanError": "verificato un errore durante l'assegnazione del piano di servizi per l'account."
+		},
+		"uiRestrictionsUpdateSuccess": "restrizioni ui aggiornato con successo!",
+		"uiRestrictionsUpdateError": "un errore imprevisto si è verificato durante l'aggiornamento delle limitazioni dell'interfaccia utente, si prega di riprovare più tardi.",
+		"notesUpdateSuccess": "note aggiornato con successo!",
+		"notesUpdateError": "un errore imprevisto si è verificato durante l'aggiornamento delle note, si prega di riprovare più tardi.",
+		"triggerMasquerading": "si sta ora masquerading conto { { accountname }}.",
+		"restoreMasquerading": "non si masquerading più."
+	},
+	"uiRestrictionsLegend": "selezionare ciò che il cliente può visionare",
+	"uiRestrictionsTooltip": "quando si fa clic sul nome da in alto a destra dello schermo, verrà visualizzato un menu a discesa. è possibile limitare la visualizzazione di queste opzioni al tuo account secondario semplicemente deselezionare da autorizzazioni di account.",
+	"uiRestrictionsMenu": {
+		"settings": "impostazioni",
+		"user": "utente",
+		"account": "conto",
+		"billing": "fatturazione",
+		"creditCard": "carta di credito",
+		"transactions": "transazioni",
+		"servicePlan": "piano di servizio",
+		"perMinute": "per minute",
+		"trunking": "trunking",
+		"inbound": "inbound",
+		"outbound": "in uscita",
+		"twoway": "twoway",
+		"errorTracker": "log errori ui",
+		"misc": "misc"
+	},
+	"uiRestrictionsExtraSettings": {
+		"perMinute": {
+			"legend": "altre impostazioni di bilanciamento",
+			"showCreditInfo": "visualizzare le informazioni di credito",
+			"showMinutesInfo": "mostra minuti informazioni"
+		}
+	},
+	"validationMessages": {
+		"invalidPasswordConfirm": "le password non corrispondono."
+	},
+	"notesLegend": "scrivere alcune note su questo account",
+	"landingContent": [
+		"You can edit a sub-account by selecting it from the list on the left",
+		"Or",
+		"Create a new sub-account by clicking on the \"Add New Account\" button."
+	],
+	"carrierTab": "vettore",
+	"accountType": "tipo di account",
+	"reseller": "rivenditore",
+	"standard": "standard",
+        "sentEmailPopup": "An email has been sent to {{email}} with the login information.",
+        "disabledAddCreditTooltip": "Braintree is required to add credit. Please contact your administrator for more information."
+}

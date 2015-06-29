@@ -1,0 +1,206 @@
+{
+	"addAccount": "Nieuwe account toevoegen",
+	"editSetting": "uitgeven",
+	"saveChanges": "wijzigingen opslaan",
+	"closeSetting": "dicht",
+	"disable": "onbruikbaar maken",
+	"disabled": "invalide",
+	"active": "actief",
+	"delete": "verwijderen",
+	"enable": "mogelijk maken",
+	"add": "voeg toe",
+	"save": "sparen",
+	"update": "bij te werken",
+	"none": "geen enkel",
+	"month": "maand",
+	"missingAccount": "ontbrekende rekening",
+	"disableAccount": "deze account uit te schakelen",
+	"enableAccount": "staat dit account",
+	"deleteAccount": "dit account verwijderen",
+	"useAccount": "gebruik rekening",
+	"changesSaved": "wijzigingen opgeslagen!",
+	"createdOn": "aangemaakt op",
+	"accountStatus": "rekeningstatus",
+	"accountId": "account id",
+	"accountName": "accountnaam",
+	"accountRealm": "rekening rijk",
+	"accountTimezone": "tijdzone",
+	"accountLanguage": "taal",
+	"accountTimezoneTitle": "tijdzone en taal",
+	"accountAdmins": "rekening beheerders",
+	"noAdminMessage": "deze account doesnt elke admin hebben",
+	"noUserMessage": "deze account doesnt hebben geen regelmatige gebruiker",
+	"newAdmin": "voeg een nieuwe beheerder",
+	"newUser": "nieuwe gebruiker",
+	"existingUser": "bestaande gebruiker",
+	"autogenPassword": "auto- Genereer wachtwoord",
+	"manuallyTypePassword": "handmatig het type wachtwoord",
+	"billingContact": {
+		"label": "contactpersoon voor facturering",
+		"name": "facturering naam van de contactpersoon",
+		"email": "billing contact email",
+		"number": "telefoonnummer"
+	},
+	"technicalContact": {
+		"label": "technisch contactpersoon",
+		"name": "technische naam van de contactpersoon",
+		"email": "technische contact e-mail",
+		"number": "telefoonnummer"
+	},
+	"chargeReminder" : {
+		"line1": "uw on-bestand creditcard wordt direct in rekening worden gebracht voor eventuele wijzigingen die u maakt. als u een terugkerende diensten zijn veranderd, zullen nieuwe heffingen zijn pro -rated voor uw facturatie cyclus.",
+		"line2": "bent u zeker dat u wilt doorgaan ?"
+	},
+	"tabTitles": {
+		"overview": "overzicht",
+		"servicePlans": "service plannen",
+		"limits": "grenzen",
+		"restrictions": "beperkingen",
+		"notes": "notities"
+	},
+	"classifiers": {
+		"unknown": {
+			"name": "anders dan hierboven",
+			"help": "selecteer deze optie als u wilt dat deze account om te bellen naar een andere dan vermeld op de lijst nummer te plaatsen. (wanneer het formaat van het nummer onbekend het systeem.)"
+		}
+	},
+	"activeServicePlan": "actieve service plan",
+	"servicePlanMaintenance": "service plan onderhoud",
+	"servicePlanReconciliation": {
+		"button": "worden verzoend",
+		"tooltip": "verzekeren dat de hoeveelheden factureerbare objecten correct zijn."
+	},
+	"servicePlanSynchronization": {
+		"button": "synchroniseren",
+		"tooltip": "actualiseren van de factuurgegevens op de creditcard processor."
+	},
+	"servicePlanWizardLegend": "kiezen voor een service plan voor dit account",
+	"servicePlanResellerOnly": "alleen resellers zijn toegestaan om abonnementen te beheren.",
+	"trunksLegend": "limieten voor onder gelijktijdige inkomende en uitgaande gesprekken",
+	"twowayTrunks": "drieweg trunks",
+	"inboundTrunks": "inbound trunks",
+	"outboundTrunks": "uitgaande trunks",
+	"callRestrictionsLegend": "gespreksbeperkingen",
+	"callRestrictionsTitle": "Dit account kan oproepen te plaatsen...",
+	"balanceTitle": "beheren tegoed",
+	"balancePerMinute": "per minuut tegoed",
+	"balanceTooltip": "Dit krediet zal worden gebruikt om per minuut (plan) gesprekken, internationale gesprekken en gratis telefoongesprekken, ontvangen.",
+	"addToBalance": "toe te voegen aan het huidige evenwicht",
+	"allowPrepay": "kunnen klanten gesprekken die gaan over de hierboven gestelde beperking per minuut maken, en Bill hen de kosten per minuut van het gesprek",
+	"addAdminLink": {
+		"toggleOn": "voeg een admin op de rekening",
+		"toggleOff": "ik ben van gedachten veranderd, die een admin nodig heeft?"
+	},
+	"adminLabels": {
+		"firstName": "admin voornaam",
+		"lastName": "admin achternaam",
+		"email": "admin e-mailadres",
+		"emailTooltip": "Dit e-mailadres zal dienen als de gebruikersnaam om in te loggen op monster-ui.",
+		"number": "admin telefoonnummer",
+		"password": "admin wachtwoord",
+		"confirm": "bevestig wachtwoord"
+	},
+	"adminPlaceholders": {
+		"firstName": "voornaam",
+		"lastName": "achternaam",
+		"email": "e-mailadres",
+		"number": "telefoonnummer",
+		"password": "wachtwoord",
+		"confirm": "bevestigen"
+	},
+	"wizardStepTitles": {
+		"setupAccount": "opzetten van een account",
+		"servicePlan": "kiezen voor service plan",
+		"limits": "gespreksbeperkingen",
+		"restrictions": "toestemmingen"
+	},
+	"wizardErrorMessages": {
+		"pleaseCorrect": "Corrigeer de volgende fouten",
+		"accountMandatoryFields": "de accountnaam en rijk velden zijn verplicht.",
+		"adminMandatoryFields": "de admin voornaam, achternaam en e-mailadres zijn verplicht bij het toevoegen van een nieuwe admin.",
+		"adminPasswordError": "het wachtwoord moet minstens 6 tekens lang zijn en zijn voorzien van een letter en een cijfer.",
+		"adminPasswordConfirmError": "het wachtwoord en de bevestiging komen niet overeen.",
+		"incorrectBalanceFormat": "onjuiste indeling voor het evenwicht krediet, kunt u alleen een nummer invoeren met maximaal 2 decimalen.",
+		"balanceMinimumAmount": "het minimum bedrag voor het evenwicht krediet is $ 5,00."
+	},
+	"wizardProcessingMessage1": "bewerkingsverzoek...",
+	"wizardProcessingMessage2": "even geduld aub terwijl de rekening wordt aangemaakt.",
+	"autogenPasswordPopup": {
+		"message": "een wachtwoord is ben automatisch gegenereerd voor uw beheerder {{ adminname }}. dit is de enige keer dat dit vergeten wordt weergegeven, moet u het onthouden of schrijf het op.",
+		"login": "log in",
+		"password": "wachtwoord"
+	},
+	"deleteUserConfirm": "Deze gebruiker zal permanent worden verwijderd. verder gaan?",
+	"deleteAccountConfirm": "deze account permanent verwijderd. verder gaan?",
+	"toastrMessages": {
+		"servicePlanUpdateSuccess": "actieve service plan succesvol gewijzigd!",
+		"servicePlanUpdateError": "een onverwachte fout opgetreden! Probeer het opnieuw.",
+		"servicePlanReconciliationSuccess": "verzoening met succes afgerond!",
+		"servicePlanReconciliationError": "een fout opgetreden tijdens verzoeningsproces! Probeer het later opnieuw.",
+		"servicePlanSynchronizationSuccess": "synchronisatie met succes afgerond!",
+		"servicePlanSynchronizationError": "een fout is opgetreden tijdens de synchronisatie proces! Probeer het later opnieuw.",
+		"limitsUpdateSuccess": "grenzen succesvol gewijzigd!",
+		"limitsUpdateError": "een onverwachte fout opgetreden tijdens het bijwerken van de grenzen, Probeer het later opnieuw.",
+		"creditAddSuccess": "krediet succesvol toegevoegd aan het huidige evenwicht!",
+		"creditAddError": "een onverwachte fout opgetreden bij het toevoegen van krediet, Probeer het later opnieuw.",
+		"deleteAccountError": "een fout opgetreden tijdens het verwijderen van de rekening, probeer het opnieuw.",
+		"newAccount": {
+			"accountError": "een onverwachte fout opgetreden tijdens het aanmaken van het account.",
+			"adminError": "de rekening beheerder kan niet worden gemaakt.",
+			"limitsError": "een fout opgetreden tijdens het opzetten van de grenzen.",
+			"forbiddenLimitsError": "U bent niet toegestaan om deze grenzen te stellen. Neem contact op met uw vertegenwoordiger.",
+			"creditError": "een fout opgetreden tijdens het toevoegen van verdienste van dit nieuwe account, zorg ervoor dat uw credit card informatie geldig.",
+			"servicePlanError": "een fout opgetreden bij het toewijzen van de service plan op de rekening."
+		},
+		"uiRestrictionsUpdateSuccess": "ui beperkingen succesvol gewijzigd!",
+		"uiRestrictionsUpdateError": "een onverwachte fout opgetreden tijdens het bijwerken van de ui beperkingen, probeer het later nog eens.",
+		"notesUpdateSuccess": "notities succesvol gewijzigd!",
+		"notesUpdateError": "een onverwachte fout opgetreden tijdens het bijwerken van de noten, Probeer het later opnieuw.",
+		"triggerMasquerading": "u bent nu vermomd de rekening {{ accountnaam }}.",
+		"restoreMasquerading": "je bent niet meer voordoet."
+	},
+	"uiRestrictionsLegend": "selecteer wat uw klant kunt bekijken",
+	"uiRestrictionsTooltip": "wanneer u klikt op uw naam uit rechterbovenhoek van het scherm ziet u een dropdown menu te zien. U kunt de weergave van deze opties om je sub- account aan door simpelweg het vinkje uit accountmachtigingen beperken.",
+	"uiRestrictionsMenu": {
+		"settings": "instellingen",
+		"user": "gebruiker",
+		"account": "rekening",
+		"billing": "facturering",
+		"creditCard": "kredietkaart",
+		"transactions": "transacties",
+		"servicePlan": "serviceplan",
+		"perMinute": "per minuut",
+		"trunking": "trunking",
+		"inbound": "inbound",
+		"outbound": "outbound",
+		"__comment": "ui-664",
+		"__version": "v3.19_s2",
+		"twoway": "drieweg",
+		"__comment": "ui-1074",
+		"__version": "v3.20_s2",
+		"errorTracker": "ui fouten te melden",
+		"misc": "misc"
+	},
+	"uiRestrictionsExtraSettings": {
+		"perMinute": {
+			"legend": "meer instellingen voor de witbalans",
+			"showCreditInfo": "tonen kredietinformatie",
+			"showMinutesInfo": "Toon minuten informatie"
+		}
+	},
+	"validationMessages": {
+		"invalidPasswordConfirm": "wachtwoorden komen niet overeen."
+	},
+	"notesLegend": "wat aantekeningen maken op deze rekening",
+	"landingContent": [
+		"You can edit a sub-account by selecting it from the list on the left",
+		"Or",
+		"Create a new sub-account by clicking on the \"Add New Account\" button."
+	],
+	"carrierTab": "drager",
+	"accountType": "account type",
+	"reseller": "reseller",
+	"standard": "standaard",
+        "sentEmailPopup": "An email has been sent to {{email}} with the login information.",
+        "disabledAddCreditTooltip": "Braintree is required to add credit. Please contact your administrator for more information."
+}
