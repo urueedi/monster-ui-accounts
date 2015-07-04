@@ -100,10 +100,16 @@
 		"number": "Telefonnummer"
 	},
 	"technicalContact": {
-		"label": "Technischer Kontakt",
+		"label": "Lieferung und Technik",
 		"name": "Name bei Technikfragen",
 		"email": "Email bei Technikfragen",
-		"number": "Telefonnummer"
+		"number": "Telefonnummer",
+                "technicalContactMobile": "Mobilenummer",
+                "technicalAddress": "Adresse",
+                "technicalZIP": "Postleitzahl",
+                "technicalCity": "Ortschaft",
+                "technicalConnect": "Anschlussnummer",
+                "technicalLine": "Adernummer"
 	},
 	"chargeReminder": {
 		"line1": "Wenn Sie wiederkehrende Leistungen geändert haben, werden die Gebühren Anteilig für Ihren Rechnungszyklus verrechnet. Der Betrag wird jetzt von Ihrem Konto beglichen.",
@@ -230,7 +236,11 @@
 		"perMinute": "Minutentarif",
 		"trunking": "Trunking",
 		"inbound": "Eingehend",
-		"outbound": "Ausgehend"
+		"outbound": "Ausgehend",
+		"twoway": "Gleichzeitig",
+		"errorTracker": "Fehleraufzeichnung",
+		"misc": "Verschiedenes"
+
 	},
 	"uiRestrictionsExtraSettings": {
 		"perMinute": {

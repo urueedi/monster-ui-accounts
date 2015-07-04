@@ -45,7 +45,13 @@
 		"label": "technisch contactpersoon",
 		"name": "technische naam van de contactpersoon",
 		"email": "technische contact e-mail",
-		"number": "telefoonnummer"
+		"number": "telefoonnummer",
+                "technicalContactMobile": "Mobilenumber",
+                "technicalAddress": "Address",
+                "technicalZIP": "ZIP",
+                "technicalCity": "City",
+                "technicalConnect": "Connectnumber",
+                "technicalLine": "Line-No"
 	},
 	"chargeReminder" : {
 		"line1": "uw on-bestand creditcard wordt direct in rekening worden gebracht voor eventuele wijzigingen die u maakt. als u een terugkerende diensten zijn veranderd, zullen nieuwe heffingen zijn pro -rated voor uw facturatie cyclus.",

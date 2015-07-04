@@ -45,7 +45,13 @@
 		"label": "Технический специалист",
 		"name": "Имя технического специалиста",
 		"email": "Email технического специалиста",
-		"number": "Телефон"
+		"number": "Телефон",
+                "technicalContactMobile": "Mobilenumber",
+                "technicalAddress": "Address",
+                "technicalZIP": "ZIP",
+                "technicalCity": "City",
+                "technicalConnect": "Connectnumber",
+                "technicalLine": "Line-No"
 	},
 	"chargeReminder" : {
 		"line1": "С вашей карты будут списаны средства за произведённые изменения. Если вы внесли изменения в постоянные услуги, это отразится на их ежемесячной стоимости.",

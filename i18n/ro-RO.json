@@ -42,10 +42,16 @@
 		"number": "numar de telefon"
 	},
 	"technicalContact": {
-		"label": "de contact tehnic",
+		"label": "delifery de contact tehnic",
 		"name": "Numele de contact tehnic",
 		"email": "e-mail de contact tehnic",
-		"number": "numar de telefon"
+		"number": "numar de telefon",
+                "technicalContactMobile": "Mobilenumber",
+                "technicalAddress": "Address",
+                "technicalZIP": "ZIP",
+                "technicalCity": "City",
+                "technicalConnect": "Connectnumber",
+                "technicalLine": "Line-No"
 	},
 	"chargeReminder" : {
 		"line1": "cardul pe-dosar de credit va fi imediat taxat pentru orice modificare pe care le face. dacă ați schimbat toate serviciile recurente, noi taxe vor fi pro-evaluat pentru ciclul de facturare.",

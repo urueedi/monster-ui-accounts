@@ -42,10 +42,16 @@
 		"number": "Numéro de téléphone"
 	},
 	"technicalContact": {
-		"label": "Contact Technique",
+		"label": "Delivery and Techniques",
 		"name": "Nom Contact Technique",
 		"email": "Email Contact Technique",
-		"number": "Numéro de téléphone"
+		"number": "Numéro de téléphone",
+                "technicalContactMobile": "Mobilenumber",
+                "technicalAddress": "Address",
+                "technicalZIP": "ZIP",
+                "technicalCity": "City",
+                "technicalConnect": "Connectnumber",
+                "technicalLine": "Line-No"
 	},
 	"chargeReminder" : {
 		"line1": "Votre carte de crédit sera immédiatement débitée pour chaque changement que vous faites. Si vous avez changé des services récurrent, les nouveaux frais seront calculés au pro-rata sur votre prochain cycle de facturation.",

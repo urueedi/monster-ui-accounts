@@ -71,10 +71,16 @@
 		"number": "Phone Number"
 	},
 	"technicalContact": {
-		"label": "Technical Contact",
+		"label": "Delivery and technicals",
 		"name": "Technical Contact Name",
 		"email": "Technical Contact Email",
-		"number": "Phone Number"
+		"number": "Phone Number",
+                "technicalContactMobile": "Mobilenumber",
+                "technicalAddress": "Address",
+                "technicalZIP": "ZIP",
+                "technicalCity": "City",
+                "technicalConnect": "Connectnumber",
+                "technicalLine": "Line-No"
 	},
 	"chargeReminder" : {
 		"line1": "Your on-file credit card will immediately be charged for any changes you make. If you have changed any recurring services, new charges will be pro-rated for your billing cycle.",

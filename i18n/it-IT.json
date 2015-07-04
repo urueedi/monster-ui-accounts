@@ -70,10 +70,16 @@
 		"number": "numero di telefono"
 	},
 	"technicalContact": {
-		"label": "contatto tecnico",
+		"label": "Delivero a contatto tecnico",
 		"name": "nome del contatto tecnico",
 		"email": "e-mail di contatto tecnico",
-		"number": "numero di telefono"
+		"number": "numero di telefono",
+                "technicalContactMobile": "Mobilenumber",
+                "technicalAddress": "Address",
+                "technicalZIP": "ZIP",
+                "technicalCity": "City",
+                "technicalConnect": "Connectnumber",
+                "technicalLine": "Line-No"
 	},
 	"chargeReminder" : {
 		"line1": "sarà immediatamente addebitato sul tuo file carta di credito per le modifiche apportate. se avete cambiato i servizi ricorrenti, nuove accuse saranno pro-rata per il ciclo di fatturazione.",
