@@ -162,7 +162,9 @@
 		"emailTooltip": "Diese Email-Adresse wird als Benutzername für das Anmelden des Monster-UI benutzt.",
 		"number": "Administrator Nummer",
 		"password": "Administrator Passwort",
-		"confirm": "wiederhole Passwort"
+		"confirm": "wiederhole Passwort",
+		"sendCredentialsEmail": "Sende Zusammenfassung mit den Benutzerdaten an diesen Administrator",
+		"sendCredentialsEmailShort": "Sende Zusammenfassung der Benutzerdaten"
 	},
 	"adminPlaceholders": {
 		"firstName": "Vorname",

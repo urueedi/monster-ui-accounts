@@ -104,7 +104,9 @@
 		"emailTooltip": "Adresa de e-mail va servi ca nume de utilizator pentru log-in pentru monstru-ui.",
 		"number": "Numărul de contact admin",
 		"password": "parola admin",
-		"confirm": "confirmă parola"
+		"confirm": "confirmă parola",
+		"sendCredentialsEmail": "Send an email to this admin with a reminder of these credentials",
+                "sendCredentialsEmailShort": "Send a summary email with credentials"
 	},
 	"adminPlaceholders": {
 		"firstName": "prenume",

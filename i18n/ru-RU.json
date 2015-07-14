@@ -103,7 +103,9 @@
 		"emailTooltip": "Этот адрес будет служить именем входа для личного кабинета.",
 		"number": "Контактный телефон администратора",
 		"password": "Пароль",
-		"confirm": "Пароль (повторно)"
+		"confirm": "Пароль (повторно)",
+		"sendCredentialsEmail": "Send an email to this admin with a reminder of these credentials",
+                "sendCredentialsEmailShort": "Send a summary email with credentials"
 	},
 	"adminPlaceholders": {
 		"firstName": "Имя",

@@ -104,7 +104,9 @@
 		"emailTooltip": "Dit e-mailadres zal dienen als de gebruikersnaam om in te loggen op monster-ui.",
 		"number": "admin telefoonnummer",
 		"password": "admin wachtwoord",
-		"confirm": "bevestig wachtwoord"
+		"confirm": "bevestig wachtwoord",
+		"sendCredentialsEmail": "Send an email to this admin with a reminder of these credentials",
+                "sendCredentialsEmailShort": "Send a summary email with credentials"
 	},
 	"adminPlaceholders": {
 		"firstName": "voornaam",

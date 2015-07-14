@@ -195,13 +195,10 @@
 							<div class="description">
 								<ul>
 								{{#if account.contact.technical.name}}
-									<li>{{account.contact.technical.name}}</li>
-								{{/if}}
-								{{#if account.contact.technical.email}}
-									<li>{{account.contact.technical.email}}</li>
+									<li>{{account.contact.technical.name}} {{account.contact.technical.email}}</li>
 								{{/if}}
 								{{#if account.contact.technical.number}}
-									<li>{{formatPhoneNumber account.contact.technical.number}}</li>
+									<li>{{formatPhoneNumber account.contact.technical.number}} {{formatPhoneNumber account.contact.technical.mobilenumber}}</li>
 								{{/if}}
 								</ul>
 							</div>

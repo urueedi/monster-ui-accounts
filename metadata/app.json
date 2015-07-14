@@ -1,36 +1,70 @@
 {
-	"name": "accounts",
-	"i18n": {
-		"en-US": {
-			"label": "Accounts Manager",
-			"description": "The Accounts app allows you to create, customize, and manage of all your client accounts.",
-			"extended_description": "This application allows resellers and service providers to handle anything related to all their customer accounts, giving you all the granular control you need to ensure your customers have an enjoyable experience with your service. In the Accounts app you can create a white labeled portal, choose which apps are available to each account, and manage each client's billing in our native billing software. Via this tool you can easily see and manage all the sub-accounts you have under your main account. Easily edit and configure all the accounts while saving time and money, allowing you to stay on top of all your sub accounts with ease.",
-			"features": [
-				"Customizable sub accounts",
-				"White-labeled portal",
-				"Easy monitoring when sub account deregisters",
-				"Native Billing software"
-			]
-		}
-	},
-	"tags": [
-		"reseller",
-		"developer"
-	],
-	"icon": "Accounts_app.png",
-	"api_url": "http://10.26.0.41:8000/v2",
-	"author": "2600Hz",
-	"version": "1.0",
-	"license": "-",
-	"price": 0,
-	"screenshots": [
-		"accounts_1.png",
-		"accounts_2.png",
-		"accounts_3.png"
-	],
-	"urls": {
-		"documentation": "{documentation_url}",
-		"howto": "{howto_video_url}"
-	},
-	"pvt_type": "app"
+   "name": "accounts",
+   "i18n": {
+       "en-US": {
+           "label": "Accounts Manager",
+           "description": "The Accounts app allows you to create, customize, and manage of all your client accounts.",
+           "extended_description": "This application allows resellers and service providers to handle anything related to all their customer accounts, giving you all the granular control you need to ensure your customers have an enjoyable  experience with your service. In the Accounts app you can create a white labeled portal, choose which apps are available to each account, and manage each client's billing in our native billing software. Via this tool you can easily see and manage all  the sub-accounts you have under your main account. Easily edit and configure all the accounts while saving time and money, allowing you to stay on top of all your sub accounts with ease.",
+           "features": [
+               "Customizable sub accounts",
+               "White-labeled portal",
+               "Easy monitoring when sub account deregisters",
+               "Native Billing software"
+           ]
+       },
+       "de-DE": {
+           "label": "Kontenverwaltung",
+           "description": "Die Kontenverwaltung ermöglicht Ihnen das erstellen, anpassen für all Ihre Kundenkonten",
+           "extended_description": "Diese Anwendung ermöglicht es Wiederverkäufern und Service Providern, Kundenkonten zu verwalten. In der Kontoanwendung können Sie ein eigenes Markenportal erstellen, wählen welche Anwendungen verfügbar sind und für jedes Konto die Abrechnung erstellen lassen. Über dieses Tool können Sie alle Unterkonten unter Ihrem Hauptkonto verwalten, so dass Sie den Überblick über alle Ihre Unterkonten jederzeit behalten.",
+           "features": [
+               "Anpassbare Unterkonten",
+               "Wiederverkauf mit eingem Portal",
+               "Einfache Überwachung, für Unterkonten",
+               "Abrechnungssoftware integriert"
+           ]
+       },
+       "fr-FR": {
+           "label": "Gestionnaire de comptes",
+           "description": "L'application Comptes vous permet de créer, de personnaliser et de gérer l'ensemble de vos comptes clients",
+           "extended_description": "Cette application permet aux revendeurs et prestataires de services pour gérer tout ce qui touche à tous leurs comptes clients, vous donnant toutes les gra contrôle nular vous devez vous assurer que vo s clients ont une expérience agréable avec votre service. Dans l'application Comptes, vous pouvez créer un portail marqué blanc, choisir les applications sont disponibles  à chaque compte, et de gérer la facturation de chaque client dans notre logicie l de facturation natif. Via cet outil, vous pouvez facilement voir et de gérer tous les sous-comptes que vous avez sous votre compte principal. EasiLy éditer et configurer tous les comptes tout en économisant temps et argent, vous permettant de rester  au-dessus de tous vos sous-comptes avec facilité.",
+           "features": [
+               "Sous-comptes personnalisables",
+               "White marqué portail",
+               "Surveillance facile quand compte secondaire désinscrit",
+               "Logiciel natif de facturation"
+           ]
+       },
+       "it-IT": {
+           "label": "Gestione account",
+           "description": "L'applicazione account consente di creare, personalizzare e gestire tutti i vostri account cliente",
+           "extended_description": "Questa applicazione consente ai rivenditori e fornitori di servizi per gestire tutto ciò che riguarda tutti i loro conti dei clienti, dandovi tutte le gra Controllo nular è necessario garantire i vostr i clienti hanno una piacevole esperienza con il servizio. Nella app Account è possibile creare un portale etichetta bianca, scegliere quali applicazioni sono disponibili  per ogni account, e gestire la fatturazione di ogni cliente nel nostro software di fatturazione nativo. Via questo strumento si può facilmente vedere e gestire tutte le sotto-conti che avete con il vostro account principale. Easily modificare e configurare tutti gli account, risparmiando tempo e denaro, consentendo di rimanere in  cima a tutti i tuoi account secondari con facilità.",
+           "features": [
+               "Conti sub personalizzabili",
+               "White-etichettato portale",
+               "Monitoraggio facile quando account secondario revocando",
+               "Software di fatturazione Native"
+           ]
+       }
+   },
+   "tags": [
+       "reseller",
+       "developer"
+   ],
+   "icon": "Accounts_app.png",
+   "api_url": "http://kazoo.allip.ovh:8000/v2",
+   "author": "2600Hz",
+   "version": "1.0",
+   "license": "MPL",
+   "price": "0.00",
+   "screenshots": [
+       "accounts1.png",
+       "accounts2.png",
+       "accounts3.png",
+       "accounts4.png",
+       "accounts5.png"
+   ],
+   "urls": {
+       "documentation": "{documentation_url}",
+       "howto": "{howto_video_url}"
+   }
 }

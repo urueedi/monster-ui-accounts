@@ -132,7 +132,9 @@
 		"emailTooltip": "Questo indirizzo email servirà come il nome utente di log- in per monster-ui.",
 		"number": "numero di contatto Admin",
 		"password": "password di amministratore",
-		"confirm": "conferma password"
+		"confirm": "conferma password",
+                "sendCredentialsEmail": "Send an email to this admin with a reminder of these credentials",
+                "sendCredentialsEmailShort": "Send a summary email with credentials"
 	},
 	"adminPlaceholders": {
 		"firstName": "nome",
