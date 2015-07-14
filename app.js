@@ -78,6 +78,7 @@ define(function(require){
 				container: accountsManager,
 				parentId: args.parentId,
 				selectedId: args.selectedId,
+				selectedTab: args.selectedTab,
 				callback: args.callback,
 				breadcrumbs: args.breadcrumbs
 			});
@@ -88,6 +89,7 @@ define(function(require){
 				parent = args.container,
 				parentId = args.parentId,
 				selectedId = args.selectedId,
+				selectedTab = args.selectedTab,
 				callback = args.callback,
 				breadcrumbsList = args.breadcrumbs;
 
@@ -111,16 +113,27 @@ define(function(require){
 							  .empty()
 							  .append(monster.template(self, 'accountsManagerLanding'));
 					} else {
-						self.edit(accountId, parent);
+						self.edit({
+							accountId: accountId,
+							parent: parent
+						});
 					}
 				},
 				onAccountClick: function(accountId) {
 					parent.find('.main-content').empty();
-					self.edit(accountId, parent);
+					self.edit({
+						accountId: accountId,
+						parent: parent
+					});
 				},
-				callback: function() {
-					callback && callback(parent);
-				}
+				callback: selectedId ? function() {
+					self.edit({
+						accountId: selectedId,
+						selectedTab: selectedTab,
+						parent: parent
+					});
+					callback && callback();
+				} : callback
 			});
 
 			// Put the focus on the search input
@@ -172,7 +185,7 @@ define(function(require){
 			newAccountWizard.find('.wizard-content-step').hide();
 			newAccountWizard.find('.wizard-content-step[data-step="1"]').show();
 
-			if(!monster.apps['auth'].isReseller) {
+			if(!monster.apps.auth.isReseller) {
 				newAccountWizard.find('.wizard-top-bar .step[data-step="2"]').hide();
 			}
 
@@ -205,7 +218,7 @@ define(function(require){
 
 				var currentStep = parseInt(newAccountWizard.find('.wizard-top-bar').data('active_step')),
 					newStep = currentStep+1;
-				if(newStep === 2 && !monster.apps['auth'].isReseller) {
+				if(newStep === 2 && !monster.apps.auth.isReseller) {
 					newStep++;
 				}
 				if(monster.ui.valid(newAccountWizardForm)) {
@@ -217,7 +230,7 @@ define(function(require){
 				ev.preventDefault();
 
 				var newStep = parseInt(newAccountWizard.find('.wizard-top-bar').data('active_step'))-1;
-				if(newStep === 2 && !monster.apps['auth'].isReseller) {
+				if(newStep === 2 && !monster.apps.auth.isReseller) {
 					newStep--;
 				}
 				if(!monster.ui.valid(newAccountWizardForm)) {
@@ -381,9 +394,6 @@ define(function(require){
 								self.render({
 									parentId: parentAccountId,
 									selectedId: newAccountId,
-									callback: function(container) {
-										self.edit(newAccountId, container);
-									},
 									breadcrumbs: params.breadcrumbs
 								});
 							});
@@ -422,7 +432,7 @@ define(function(require){
 
 			monster.parallel({
 					servicePlans: function(callback) {
-						if(monster.apps['auth'].isReseller) {
+						if(monster.apps.auth.isReseller) {
 							self.callApi({
 								resource: 'servicePlan.list',
 								data: {
@@ -550,7 +560,7 @@ define(function(require){
 				parent = params.parent,
 				stepTemplate = $(monster.template(self, 'servicePlanWizardStep', {
 					servicePlans: params.servicePlans,
-					isReseller: monster.apps['auth'].isReseller
+					isReseller: monster.apps.auth.isReseller
 				}));
 
 			stepTemplate.find('.service-plan-select').on('change', function(e) {
@@ -693,7 +703,7 @@ define(function(require){
 		changeUIRestrictionForServicePlan: function(template, servicePlan) {
 			var self = this,
 				limits = self.getUIRestrictionForServicePlan(servicePlan),
-				setCheckboxValue = function(key, value) {
+				setCheckboxValue = function(key) {
 					var keyTrunks = key + '_trunks',
 						value = limits.hasOwnProperty(keyTrunks) ? limits[keyTrunks] : false; 
 
@@ -782,7 +792,6 @@ define(function(require){
 
 		renderEditAdminsForm: function(parent, editAccountId) {
 			var self = this,
-				editAccountId = editAccountId;
 				$settingsItem = parent.find('li.settings-item[data-name="accountsmanager_account_admins"]'),
 				closeAdminsSetting = function() {
 					$settingsItem.removeClass('open');
@@ -1075,8 +1084,11 @@ define(function(require){
 			});
 		},
 
-		edit: function(accountId, parent) {
-			var self = this;
+		edit: function(args) {
+			var self = this,
+				accountId = args.accountId,
+				selectedTab = args.selectedTab,
+				parent = args.parent;
 
 			monster.parallel({
 					account: function(callback) {
@@ -1228,7 +1240,8 @@ define(function(require){
 							classifiers: results.classifiers,
 							accountBalance: 'balance' in results.currentBalance ? results.currentBalance.balance : 0,
 							parent: parent,
-							noMatch: results.noMatch
+							noMatch: results.noMatch,
+							selectedTab: selectedTab
 						},
 						editCallback = function() {
 							params = self.formatDataEditAccount(params);
@@ -1274,6 +1287,7 @@ define(function(require){
 				accountLimits = params.accountLimits,
 				accountBalance = params.accountBalance,
 				carrierInfo = params.carrierInfo,
+				selectedTab = params.selectedTab,
 				parent = params.parent,
 				callback = params.callback,
 				admins = $.map(accountUsers, function(val) {
@@ -1301,7 +1315,7 @@ define(function(require){
 					accountAdmins: admins,
 					accountUsers: regularUsers,
 					accountServicePlans: servicePlans,
-					isReseller: monster.apps['auth'].isReseller,
+					isReseller: monster.apps.auth.isReseller,
 					carrierInfo: carrierInfo,
 					isSuperDuperAdmin: monster.apps.auth.currentAccount.superduper_admin,
 					accountIsReseller: accountData.is_reseller
@@ -1325,7 +1339,20 @@ define(function(require){
 
 			monster.pub('common.carrierSelector', {
 				container: contentHtml.find('#accountsmanager_carrier_tab'),
-				data: params
+				data: params,
+				callbackAfterSave: function() {
+					monster.pub('common.accountBrowser.getBreadcrumbsList', {
+						container: parent.find('.top-bar'),
+						callback: function(breadcrumbs) {
+							self.render({
+								parentId: _.last(breadcrumbs).id,
+								selectedId: accountData.id,
+								breadcrumbs: breadcrumbs,
+								selectedTab: 'tab-carrier'
+							});
+						}
+					});
+				}
 			});
 
 			contentHtml.find('.account-tabs a').click(function(e) {
@@ -1402,27 +1429,16 @@ define(function(require){
 				if(monster.ui.valid(contentHtml.find('#form_'+fieldName))) {
 					self.updateData(accountData, newData,
 						function(data) {
-							params.accountData = data.data;
-							params.callback = function(parent) {
-								var $link = parent.find('li[data-name='+fieldName+']');
-
-								$link.find('.update').hide();
-								$link.find('.changes-saved').show()
-														  .fadeOut(1500, function() {
-															  $link.find('.update').fadeIn(500);
-														  });
-
-								$link.css('background-color', '#22a5ff')
-									   .animate({
-										backgroundColor: '#eee'
-									}, 2000
-								);
-
-								parent.find('.settings-item-content').hide();
-								parent.find('a.settings-link').show();
-							};
-
-							self.editAccount(params);
+							monster.pub('common.accountBrowser.getBreadcrumbsList', {
+								container: parent.find('.top-bar'),
+								callback: function(breadcrumbs) {
+									self.render({
+										parentId: _.last(breadcrumbs).id,
+										selectedId: accountData.id,
+										breadcrumbs: breadcrumbs
+									});
+								}
+							});
 						},
 						function(data) {
 							if(data && data.data && 'api_error' in data.data && 'message' in data.data.api_error) {
@@ -1434,7 +1450,7 @@ define(function(require){
 			});
 
 			// If reseller
-			if(monster.apps['auth'].isReseller) {
+			if(monster.apps.auth.isReseller) {
 				var $btn_save = contentHtml.find('#accountsmanager_serviceplan_save'),
 					$btn_rec = contentHtml.find('#accountsmanager_serviceplan_reconciliation'),
 					$btn_sync = contentHtml.find('#accountsmanager_serviceplan_synchronization');
@@ -1461,8 +1477,20 @@ define(function(require){
 						var newPlanId = contentHtml.find('#accountsmanager_serviceplan_select').val(),
 							success = function(data) {
 								self.updateUIRestrictionsFromServicePlan(contentHtml, accountData, data, function() {
-									toastr.success(self.i18n.active().toastrMessages.servicePlanUpdateSuccess, '', {"timeOut": 5000});
-									$btn_save.removeClass('disabled');
+									monster.pub('common.accountBrowser.getBreadcrumbsList', {
+										container: parent.find('.top-bar'),
+										callback: function(breadcrumbs) {
+											self.render({
+												parentId: _.last(breadcrumbs).id,
+												selectedId: accountData.id,
+												breadcrumbs: breadcrumbs,
+												selectedTab: 'tab-serviceplans',
+												callback: function() {
+													toastr.success(self.i18n.active().toastrMessages.servicePlanUpdateSuccess, '', {"timeOut": 5000});
+												}
+											});
+										}
+									});
 								});
 							},
 							error = function() {
@@ -1582,6 +1610,10 @@ define(function(require){
 			parent.find('.main-content').empty()
 										.append(contentHtml);
 
+			if(selectedTab) {
+				contentHtml.find('.'+selectedTab+' > a').tab('show');
+			}
+
 			notesTab.find('div.dropdown-menu input')
 					.on('click', function () {
 						return false;
@@ -1602,7 +1634,20 @@ define(function(require){
 					{ custom_notes: notesContent },
 					function(data, status) {
 						accountData = data.data;
-						toastr.success(self.i18n.active().toastrMessages.notesUpdateSuccess, '', {"timeOut": 5000});
+						monster.pub('common.accountBrowser.getBreadcrumbsList', {
+							container: parent.find('.top-bar'),
+							callback: function(breadcrumbs) {
+								self.render({
+									parentId: _.last(breadcrumbs).id,
+									selectedId: accountData.id,
+									breadcrumbs: breadcrumbs,
+									selectedTab: 'tab-notes',
+									callback: function() {
+										toastr.success(self.i18n.active().toastrMessages.notesUpdateSuccess, '', {"timeOut": 5000});
+									}
+								});
+							}
+						});
 					},
 					function(data, status) {
 						toastr.error(self.i18n.active().toastrMessages.notesUpdateError, '', {"timeOut": 5000});
@@ -1638,7 +1683,8 @@ define(function(require){
 					title: self.i18n.active().deleteAccountDialog.title,
 					dialogClass: 'monster-confirm'
 				},
-				deleteKey = self.i18n.active().deleteAccountDialog.deleteKey;
+				deleteKey = self.i18n.active().deleteAccountDialog.deleteKey,
+				popup = monster.ui.dialog(template, optionsPopup);
 
 				template.find('#delete_account').on('click', function() {
 					if(!$(this).hasClass('disabled')) {
@@ -1659,8 +1705,6 @@ define(function(require){
 				template.find('#cancel').on('click', function() {
 					popup.dialog('close').remove();
 				});
-
-				popup = monster.ui.dialog(template, optionsPopup);
 		},
 
 		/** Expected params:
@@ -1733,7 +1777,7 @@ define(function(require){
 					}
 				});
 
-				popup = monster.ui.dialog(template, {
+				var popup = monster.ui.dialog(template, {
 					title: self.i18n.active().updateCreditDialog.title
 				});
 			});
@@ -1759,41 +1803,66 @@ define(function(require){
 					});
 					accountData.call_restriction = callRestrictions;
 
-					self.callApi({
-						resource: 'limits.update',
-						data: {
-							accountId: accountData.id,
-							data: $.extend(true, {}, limits, {
-								twoway_trunks: newTwowayValue,
-								inbound_trunks: newInboundValue,
-								outbound_trunks: newOutboundValue,
-								allow_prepay: allowPrepay,
-								call_restriction: callRestrictions
-							})
+					monster.parallel({
+						limits: function(parallelCallback) {
+							self.callApi({
+								resource: 'limits.update',
+								data: {
+									accountId: accountData.id,
+									data: $.extend(true, {}, limits, {
+										twoway_trunks: newTwowayValue,
+										inbound_trunks: newInboundValue,
+										outbound_trunks: newOutboundValue,
+										allow_prepay: allowPrepay,
+										call_restriction: callRestrictions
+									})
+								},
+								success: function(data, status) {
+									toastr.success(self.i18n.active().toastrMessages.limitsUpdateSuccess, '', {"timeOut": 5000});
+									parallelCallback && parallelCallback(null, data.data);
+								},
+								error: function(data, status) {
+									if(data.error != 402) {
+										toastr.error(self.i18n.active().toastrMessages.limitsUpdateError, '', {"timeOut": 5000});
+									}
+									parallelCallback && parallelCallback(null, null);
+								}
+							});
 						},
-						success: function(data, status) {
-							toastr.success(self.i18n.active().toastrMessages.limitsUpdateSuccess, '', {"timeOut": 5000});
-						},
-						error: function(data, status) {
-							if(data.error != 402) {
-								toastr.error(self.i18n.active().toastrMessages.limitsUpdateError, '', {"timeOut": 5000});
+						restrictions: function(parallelCallback) {
+							self.callApi({
+								resource: 'account.update',
+								data: {
+									accountId: accountData.id,
+									data: accountData
+								},
+								success: function(data, status) {
+									toastr.success(self.i18n.active().toastrMessages.callRestrictionsUpdateSuccess, '', {"timeOut": 5000});
+									parallelCallback && parallelCallback(null, data.data);
+								},
+								error: function(data, status) {
+									toastr.error(self.i18n.active().toastrMessages.callRestrictionsUpdateError, '', {"timeOut": 5000});
+									parallelCallback && parallelCallback(null, null);
+								}
+							});
+						}
+					},
+					function(err, results) {
+						monster.pub('common.accountBrowser.getBreadcrumbsList', {
+							container: $('#accounts_manager_view .content .top-bar'),
+							callback: function(breadcrumbs) {
+								self.render({
+									parentId: _.last(breadcrumbs).id,
+									selectedId: accountData.id,
+									breadcrumbs: breadcrumbs,
+									selectedTab: 'tab-limits'
+								});
 							}
-						}
+						});
 					});
+					
 
-					self.callApi({
-						resource: 'account.update',
-						data: {
-							accountId: accountData.id,
-							data: accountData
-						},
-						success: function(data, status) {
-							toastr.success(self.i18n.active().toastrMessages.callRestrictionsUpdateSuccess, '', {"timeOut": 5000});
-						},
-						error: function(data, status) {
-							toastr.error(self.i18n.active().toastrMessages.callRestrictionsUpdateError, '', {"timeOut": 5000});
-						}
-					});
+					
 				}
 
 			});
@@ -1923,7 +1992,20 @@ define(function(require){
 
 				self.updateData(accountData, uiRestrictions,
 					function(data, status) {
-						toastr.success(self.i18n.active().toastrMessages.uiRestrictionsUpdateSuccess, '', {"timeOut": 5000});
+						monster.pub('common.accountBrowser.getBreadcrumbsList', {
+							container: $('#accounts_manager_view .content .top-bar'),
+							callback: function(breadcrumbs) {
+								self.render({
+									parentId: _.last(breadcrumbs).id,
+									selectedId: accountData.id,
+									breadcrumbs: breadcrumbs,
+									selectedTab: 'tab-restrictions',
+									callback: function() {
+										toastr.success(self.i18n.active().toastrMessages.uiRestrictionsUpdateSuccess, '', {"timeOut": 5000});
+									}
+								});
+							}
+						});
 					},
 					function(data, status) {
 						toastr.error(self.i18n.active().toastrMessages.uiRestrictionsUpdateError, '', {"timeOut": 5000});
@@ -1944,7 +2026,7 @@ define(function(require){
 					$(this).closest('a').addClass('enabled');
 				} else {
 					$(this).closest('a').removeClass('enabled');
-				};
+				}
 			});
 
 			template.find('.restrictions-element input').on('change', function(e) {
@@ -1957,7 +2039,7 @@ define(function(require){
 				} else {
 					$this.closest('a').removeClass('enabled');
 					template.find('.restrictions-right .' + restrictionType + ' input').prop('checked', false);
-				};
+				}
 				restrictionElement.click();
 			});
 
@@ -1985,7 +2067,7 @@ define(function(require){
 				var restrictionsContainer = $(this).parents().eq(2),
 					isChecked = false;
 
-				if ( restrictionsContainer.data('content') != 'restrictions-balance' ) {
+				if ( restrictionsContainer.data('content') !== 'restrictions-balance' ) {
 					restrictionsContainer.find('input').each(function() {
 						if ($(this).is(':checked')) {
 							isChecked = true;
@@ -2063,7 +2145,7 @@ define(function(require){
 		_triggerMasquerading: function(account) {
 			var self = this;
 
-			monster.apps['auth'].currentAccount = $.extend(true, {}, account);
+			monster.apps.auth.currentAccount = $.extend(true, {}, account);
 			self.updateApps(account.id);
 
 			self.callApi({
@@ -2088,7 +2170,7 @@ define(function(require){
 
 		updateApps: function(accountId) {
 			$.each(monster.apps, function(key, val) {
-				if( (val.isMasqueradable && val.apiUrl === monster.apps['accounts'].apiUrl) || key === 'auth' ) {
+				if( (val.isMasqueradable && val.apiUrl === monster.apps.accounts.apiUrl) || key === 'auth' ) {
 					val.accountId = accountId;
 				}
 			});
@@ -2097,8 +2179,8 @@ define(function(require){
 		_restoreMasquerading: function() {
 			var self = this;
 
-			monster.apps['auth'].currentAccount = $.extend(true, {}, monster.apps['auth'].originalAccount);
-			self.updateApps(monster.apps['auth'].originalAccount.id);
+			monster.apps.auth.currentAccount = $.extend(true, {}, monster.apps.auth.originalAccount);
+			self.updateApps(monster.apps.auth.originalAccount.id);
 
 			monster.pub('myaccount.renderNavLinks');
 
