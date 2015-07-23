@@ -1,4 +1,4 @@
-# monster-ui-accounts
+# monster-ui-accounts (Cloudbased Accounting GUI)
 ![accounts1](https://raw.githubusercontent.com/urueedi/monster-ui-accounts/master/metadata/icon/accounts1.png)
 ![accounts2](https://raw.githubusercontent.com/urueedi/monster-ui-accounts/master/metadata/icon/accounts2.png)
 ![accounts3](https://raw.githubusercontent.com/urueedi/monster-ui-accounts/master/metadata/icon/accounts3.png)
