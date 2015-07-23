@@ -283,5 +283,6 @@
         "standard": "Standard",
         "carrierTab": "Carrier",
         "sentEmailPopup": "Ein eMail mit den Anmeldedaten wurde an {{email}} gesendet.",
-        "disabledAddCreditTooltip": "Braintree wird benötigt um eine Aufladung zu tätigen. Oder kontaktieren Sie Ihren Administrator für mehr Informationen."
+        "disabledAddCreditTooltip": "Braintree wird benötigt um eine Aufladung zu tätigen. Oder kontaktieren Sie Ihren Administrator für mehr Informationen.",
+        "account_has_descendants": "Sie müssen zuerst alle Unterkontos löschen, um diess Konto zu löschen zu können."
 }

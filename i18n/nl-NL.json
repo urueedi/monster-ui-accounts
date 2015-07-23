@@ -210,5 +210,6 @@
 	"reseller": "reseller",
 	"standard": "standaard",
         "sentEmailPopup": "An email has been sent to {{email}} with the login information.",
-        "disabledAddCreditTooltip": "Braintree is required to add credit. Please contact your administrator for more information."
+        "disabledAddCreditTooltip": "Braintree is required to add credit. Please contact your administrator for more information.",
+	"account_has_descendants": "You need to delete subaccounts before deleting this account"
 }
