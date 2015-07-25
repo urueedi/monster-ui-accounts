@@ -151,7 +151,7 @@
 	"balancePerMinute": "Kredit Kontostand: ",
 	"balanceTooltip": "Diese Kreditlimite wird für Verbindungen im Minutentarif verwendete (Kostenpflichtige Verbindungen)",
 	"addToBalance": "Zufügen einer Zahlung:",
-	"allowPrepay": "Erlaube Kunde den Minutentarif wenn die Limite aufgebraucht ist, und verrechne im Minutentarif Zusätzlich.",
+	"allowPrepay": "Erlaube Kunde den Minutentarif wenn die Pauschale aufgebraucht ist, und verrechne im Minutentarif zusätzlich.",
 	"addAdminLink": {
 		"toggleOn": "Ein Administrator zum Konto zufügen",
 		"toggleOff": "Administrator wird nicht benötigt"
@@ -284,5 +284,25 @@
         "carrierTab": "Carrier",
         "sentEmailPopup": "Ein eMail mit den Anmeldedaten wurde an {{email}} gesendet.",
         "disabledAddCreditTooltip": "Braintree wird benötigt um eine Aufladung zu tätigen. Oder kontaktieren Sie Ihren Administrator für mehr Informationen.",
+        "deleteAccountDialog": {
+                "title": "Kontolöschung bestätigen",
+                "cancel": "Abbrechen",
+                "deleteAccount": "Konto Löschen",
+                "deleteKey": "LÖSCHEN",
+                "deleteMessageIntro": "Sind Sie sicher das Sie das Konto (\"{{variable}}\") löschen möchten?",
+                "deleteMessageExplanation": "Bestätigen Sie mit dem Wort \"{{variable}}\" die Löschung und drücken Sie auf das \"LÖSCHEN\" Feld!"
+        },
+        "updateCreditDialog": {
+                "title": "Erneuerung Kredit Betrag",
+                "creditBalance": "Verfügbarer Kreditbetrag",
+                "addCredit": "Zufügen",
+                "removeCredit": "Abbuchen",
+                "addCreditOne": "Betrag einmal zufügen",
+                "removeCreditOne": "Betrag einmal abbuchen",
+                "helpAddCreditOne": "Wenn Sie mindestens einen Betrag von 100.00 auf Ihrem Konto haben, können Sie dadurch die Notrufe oder die Anruf-ID selbst einstellen, auch Anrufe mit Minutenabrechnung sind dann erlaubt ",
+                "helpRemoveCreditOne": "Wenn zuviel Kredit aufgeladen wurde, können Sie für Ihre Unterkontos diese abbuchen.",
+                "placeholderAmount": "100.00",
+                "successfulUpdate": "Sie haben erfolgreich den Betrag dieses Kontos ausgeglichen! :)"
+        },
         "account_has_descendants": "Sie müssen zuerst alle Unterkontos löschen, um diess Konto zu löschen zu können."
 }
