@@ -1154,9 +1154,9 @@
 }
 
 .update-credits-content-wrapper .box-content .line-content .line-button {
-	width: 138px;
+	width: auto;
 	padding: 0 10px;
-	text-align: right;
+	text-align: center;
 }
 
 .update-credits-content-wrapper .box-content .line-content .line-button button {

@@ -17,7 +17,8 @@
                         "zoiperToken": "Zoiper Token",
                         "supportProvision": "Automatische Gerätekonfiguration ein",
                         "provisionEnabled": "Ist Eingeschaltet",
-                        "provisionDisabled": "Ist Ausgeschaltet"
+                        "provisionDisabled": "Ist Ausgeschaltet",
+                        "supportCreatenew": "Benutzer Gerätekonfiguration ein"
                 }
         },
         "servicePlanDetails": {
@@ -28,6 +29,7 @@
                         "phone_numbers": "Abonnement Nummern",
                         "number_services": "Abonnement Zusatzoptionen",
                         "apps": "Abonnement Apps",
+                        "rates": "Tarife & Pauschalverbindungen",
                         "limits": "Abonnement Pauschale-Verbindungen",
                         "devices": "Abonnement Geräte",
                         "users": "Abonnement Benutzer",
@@ -119,8 +121,9 @@
 	"tabTitles": {
 		"overview": "Überblick",
 		"servicePlans": "Abonnementsplan",
+		"rates": "Gesprächstarife",
 		"limits": "Limiten",
-		"restrictions": "Beschränkungen",
+		"restrictions": "Kontoansicht",
 		"notes": "Notizen"
 	},
 	"classifiers": {
@@ -178,6 +181,7 @@
 	"wizardStepTitles": {
 		"setupAccount": "Neues Konto einrichten",
 		"servicePlan": "Wähle ein Abonnement",
+		"rates": "Gesprächstarife",
 		"limits": "Beschränkungen",
 		"restrictions": "Berechtigungen"
 	},
@@ -206,7 +210,9 @@
                 "servicePlanReconciliationError": "Fehler beim Versöhnungsprozess aufgetreten Bitte versuchen Sie es später noch einmal!",
                 "servicePlanSynchronizationSuccess": "Synchronisation erfolgreich abgeschlossen!",
                 "servicePlanSynchronizationError": "Es ist ein Fehler bei der Synchronisation aufgetreten. Bitte versuchen Sie es später noch einmal!",
+                "ratesUpdateSuccess": "Konto-Gesprächstarife erfolgreich aktualisiert!",
                 "limitsUpdateSuccess": "Limiten erfolgreich aktualisiert!",
+                "ratesUpdateError": "Während der Aktualisierung der Konto-Gesprächstarife ist ein unerwarteter Fehler ist aufgetreten. Versuchen Sie es später erneut.",
                 "limitsUpdateError": "Während der Aktualisierung der Limiten ist ein unerwarteter Fehler ist aufgetreten. Versuchen Sie es später erneut.",
                 "creditAddSuccess": "Zahlung wurde erfolgreich dem aktuellen Kontostand hinzugefügt!",
                 "creditAddError": "Ein unerwarteter Fehler ist beim Hinzufügen der Zahlung aufgetreten. Versuchen Sie es später erneut.",
@@ -214,6 +220,7 @@
                 "NewAccount": {
                         "accountError": "Ein unerwarteter Fehler beim Erstellen der Rechnung aufgetreten.",
                         "adminError": "Das Konto des Administrator konnte nicht erstellt werden.",
+                        "ratesError": "Fehler beim Einrichten der Konto-Gesprächstarife ist aufgetreten.",
                         "limitsError": "Fehler beim Einrichten der Limiten ist aufgetreten.",
                         "forbiddenLimitsError": "Es ist nicht erlaubt, diese Limiten zu setzen. Bitte wenden Sie sich an Ihren Wiederverkäufer..",
                         "creditError": "Es ist ein Fehler bei der Gutschrift auf das Konto aufgetreten.",
@@ -294,7 +301,7 @@
         },
         "updateCreditDialog": {
                 "title": "Erneuerung Kredit Betrag",
-                "creditBalance": "Verfügbarer Kreditbetrag",
+                "creditBalance": "Aktueller Kontostand",
                 "addCredit": "Zufügen",
                 "removeCredit": "Abbuchen",
                 "addCreditOne": "Betrag einmal zufügen",

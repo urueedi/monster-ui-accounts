@@ -19,7 +19,8 @@
                         "zoiperToken": "Zoiper Token",
                         "supportProvision": "Automatic Devicesetting on",
                         "provisionEnabled": "Is Enabled",
-                        "provisionDisabled": "Is Disabled"
+                        "provisionDisabled": "Is Disabled",
+                        "supportCreatenew": "User Devicesetting on"
                 }
         },
 	"addAccount": "Add New Account",
@@ -90,6 +91,7 @@
 	"tabTitles": {
 		"overview": "Overview",
 		"servicePlans": "Service Plans",
+		"rates": "Rates",
 		"limits": "Limits",
 		"restrictions": "Restrictions",
 		"notes": "Notes"
@@ -151,6 +153,7 @@
 	"wizardStepTitles": {
 		"setupAccount": "Set up an account",
 		"servicePlan": "Choose Service Plan",
+		"rates": "Account Rates",
 		"limits": "Call Restrictions",
 		"restrictions": "Permissions"
 	},
@@ -178,7 +181,9 @@
 		"servicePlanReconciliationError": "An error occurred during reconciliation process! Please try again later.",
 		"servicePlanSynchronizationSuccess": "Synchronization completed successfully!",
 		"servicePlanSynchronizationError": "An error occurred during synchronization process! Please try again later.",
+		"ratesUpdateSuccess": "Accountrates updated successfully!",
 		"limitsUpdateSuccess": "Limits updated successfully!",
+		"ratesUpdateError": "An unexpected error occured when updating the Accountrates, please try again later.",
 		"limitsUpdateError": "An unexpected error occured when updating the limits, please try again later.",
 		"creditAddSuccess": "Credit successfully added to the current balance!",
 		"creditAddError": "An unexpected error occured when adding credit, please try again later.",
@@ -186,6 +191,7 @@
 		"newAccount": {
 			"accountError": "An unexpected error occured while creating the account.",
 			"adminError": "The account administrator could not be created.",
+			"ratesError": "An error occured while setting up the Accountrates.",
 			"limitsError": "An error occured while setting up the limits.",
 			"forbiddenLimitsError": "You are not allowed to set those limits. Please contact your sales representative.",
 			"creditError": "An error occured while adding credit to this new account, make sure your credit card information is valid.",

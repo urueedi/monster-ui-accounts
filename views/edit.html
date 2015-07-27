@@ -5,6 +5,7 @@
 			<ul class="nav nav-tabs account-tabs">
 				<li class="tab-overview active"><a href="#accountsmanager_overview_tab">{{ i18n.tabTitles.overview }}</a></li>
 				<li class="tab-serviceplans {{#unless account.enabled}}disabled{{/unless}}"><a href="#accountsmanager_serviceplans_tab">{{ i18n.tabTitles.servicePlans }}</a></li>
+				<li class="tab-rates {{#unless account.enabled}}disabled{{/unless}}"><a href="#accountsmanager_rates_tab">{{ i18n.tabTitles.rates }}</a></li>
 				<li class="tab-limits {{#unless account.enabled}}disabled{{/unless}}"><a href="#accountsmanager_limits_tab">{{ i18n.tabTitles.limits }}</a></li>
 				<li class="tab-restrictions {{#unless account.enabled}}disabled{{/unless}}"><a href="#accountsmanager_restrictions_tab">{{ i18n.tabTitles.restrictions }}</a></li>
 				{{#unless carrierInfo.disabled}}
@@ -352,12 +353,20 @@
                                                                                                 <input type="text" id="provision_zoipertoken" name="provision.zoipertoken" value="{{account.provision.zoipertoken}}" placeholder="" data-original_value="{{account.provision.zoipertoken}}"/></div>
                                                                                 </div>
 
-
                                                                                <div class="control-group">
-                                                                                        <label class="control-label" for="provision_enabled">{{ i18n.account.provision.supportProvision }}</label>
+                                                                                        <label class="control-label" for="account_provision_enabled">{{ i18n.account.provision.supportProvision }}</label>
                                                                                         <div class="controls checkbox-container">
                                                                                                 {{#monsterCheckbox}}
                                                                                                         <input type="checkbox" id="account_provision_enabled" name="provision.provision_enabled" {{#if account.provision.provision_enabled}}checked{{/if}} />
+                                                                                                {{/monsterCheckbox}}
+                                                                                        </div>
+                                                                                </div>
+
+                                                                               <div class="control-group">
+                                                                                        <label class="control-label" for="account_createnew_enabled">{{ i18n.account.provision.supportCreatenew }}</label>
+                                                                                        <div class="controls checkbox-container">
+                                                                                                {{#monsterCheckbox}}
+                                                                                                        <input type="checkbox" id="account_createnew_enabled" name="provision.createnew_enabled" {{#if account.provision.createnew_enabled}}checked{{/if}} />
                                                                                                 {{/monsterCheckbox}}
                                                                                         </div>
                                                                                 </div>
@@ -549,6 +558,14 @@
 						</form>
 					</div>
 					{{/compare}}
+				</div>
+			</div>
+
+			<div class="tab-pane" id="accountsmanager_rates_tab">
+				<form id="accountsmanager_callrestrictions_form">
+				</form>
+				<div class="clearfix buttons-div">
+					<button type="button" id="accountsmanager_rates_save" class="monster-button-success">{{ i18n.update }}</button>
 				</div>
 			</div>
 
