@@ -163,7 +163,7 @@
 		"firstName": "Administrator Vorname",
 		"lastName": "Administrator Nachname",
 		"email": "Administrator Email-Adresse",
-		"emailTooltip": "Diese Email-Adresse wird als Benutzername für das Anmelden des Monster-UI benutzt.",
+		"emailTooltip": "Diese Email-Adresse wird als Benutzername für das Anmelden dieser Oberfläche benutzt.",
 		"number": "Administrator Nummer",
 		"password": "Administrator Passwort",
 		"confirm": "wiederhole Passwort",
@@ -176,7 +176,7 @@
 		"email": "Email-Adresse",
 		"number": "Telefonnummer",
 		"password": "Passwort",
-		"confirm": "wiederholen"
+		"confirm": "Passwort wiederholen"
 	},
 	"wizardStepTitles": {
 		"setupAccount": "Neues Konto einrichten",
