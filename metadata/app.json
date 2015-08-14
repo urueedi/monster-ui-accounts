@@ -40,7 +40,8 @@
    },
    "tags": [
        "reseller",
-       "developer"
+       "developer",
+       "carrier"
    ],
    "icon": "Accounts_app.png",
    "api_url": "http://kazoo.allip.ovh:8000/v2",
