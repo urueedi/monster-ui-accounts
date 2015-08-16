@@ -191,8 +191,6 @@
 		"notesUpdateError": "Une erreur inattendue s'est produite lors de la mise à jour des notes, veuillez réessayer plus tard.",
 		"triggerMasquerading": "Vous utilisez désormais le compte \"{{accountName}}\".",
 		"restoreMasquerading": "Vous utilisez à nouveau votre propre compte.",
-		"__comment": "UI-1498: Moved call restrictions back from limits to the account document",
-		"__version": "v3.20_s5",
 		"callRestrictionsUpdateSuccess": "Restrictions d'appel mises à jour avec succès!",
 		"callRestrictionsUpdateError": "Une erreur inattendue s'est produite lors de la mise à jour des restrictions d'appel, veuillez réessayer plus tard."
 	},
@@ -210,11 +208,7 @@
 		"trunking": "Limite d'appels",
 		"inbound": "Entrants",
 		"outbound": "Sortants",
-		"__comment": "UI-664: New restriction for twoway trunks",
-		"__version": "v3.19_s2",
 		"twoway": "Bi-directionnel",
-		"__comment": "UI-1074: New restriction for Misc Error Tracker",
-		"__version": "v3.20_s2",
 		"errorTracker": "Historique d'erreurs UI",
 		"misc": "Divers"
 	},
@@ -234,23 +228,13 @@
 		"Ou",
 		"Créer un nouveau compte en cliquant sur le bouton \"Ajouter un compte\"."
 	],
-	"__comment": "UI-966: created common control for carrier selection",
-	"__version": "v3.20_s0",
 	"carrierTab": "Opérateur téléphonique",
-	"__comment": "UI-1171: Add a field to show the type of an account",
-	"__version": "v3.20_s2",
 	"accountType": "Type de compte",
 	"reseller": "Fournisseur",
 	"standard": "Standard",
-	"__comment": "UI-1169: Sending an email to newly created admins",
-	"__version": "v3.20_s3",
 	"sentEmailPopup": "Un email contenant les informations de connexion a été envoyé à {{email}}.",
 	"disabledAddCreditTooltip": "Braintree est requis pour ajouter du crédit. Pour plus d'informations, veuillez contacter votre administrateur.",
-	"__comment": "UI-1448: Add name of the account to be deleted in the confirm message for a better UX",
-	"__version": "v3.20_s5",
 	"deleteAccountConfirmVar": "Ce compte (\"{{accountName}}\") sera supprimé de manière permanente. Continuer?",
-	"__comment": "UI-1460: Force user to type a string before deleting an account",
-	"__version": "v3.20_s5",
 	"deleteAccountDialog": {
 		"title": "Confirmation de la suppression du compte",
 		"cancel": "Annuler",
@@ -259,8 +243,6 @@
 		"deleteMessageIntro": "Souhaitez-vous réellement supprimer ce compte (\"{{variable}}\")?",
 		"deleteMessageExplanation": "Veuillez taper le mot \"{{variable}}\" dans la case suivante, et cliquez ensuite sur le bouton Supprimer pour continuer"
 	},
-	"__comment": "UI-1609: Add a way to Remove Credit",
-	"__version": "3.21",
 	"updateCreditDialog": {
 		"title": "Changer le montant de crédits",
 		"creditBalance": "Crédits disponibles",
@@ -272,5 +254,9 @@
 		"helpRemoveCreditOne": "Retirer des crédits peux être utile afin de corriger une erreur faite lors d'un ajout de crédits par exemple.",
 		"placeholderAmount": "10.00"
 	},
-	"account_has_descendants": "Vous devez supprimer les sous-comptes avant de supprimer ce compte."
+	"account_has_descendants": "Vous devez supprimer les sous-comptes avant de supprimer ce compte.",
+        "changeServicePlanDialog": {
+                "title": "Set service plan",
+                "successUpdate": "You successfuly updated the service plan of this account!"
+        }
 }

@@ -205,11 +205,7 @@
 		"trunking": "trunking",
 		"inbound": "intrare",
 		"outbound": "outbound",
-		"__comment": "ui-664",
-		"__version": "v3.19_s2",
 		"twoway": "twoWay pe opțiunea",
-		"__comment": "ui-1074",
-		"__version": "v3.20_s2",
 		"errorTracker": "Erori UI jurnal",
 		"misc": "misc"
 	},
@@ -256,5 +252,9 @@
                 "placeholderAmount": "10.00",
                 "successfulUpdate": "Congratulations, you successfuly updated the amount of credits available on that account! :)"
         },
-        "account_has_descendants": "You need to delete subaccounts before deleting this account"
+        "account_has_descendants": "You need to delete subaccounts before deleting this account",
+        "changeServicePlanDialog": {
+                "title": "Set service plan",
+                "successUpdate": "You successfuly updated the service plan of this account!"
+        }
 }

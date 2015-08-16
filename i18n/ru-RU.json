@@ -191,8 +191,6 @@
 		"notesUpdateError": "Во время обновления заметов произошла ошибка. Пожалуйста, попробуйте ещё раз!",
 		"triggerMasquerading": "Теперь вы работаете под учётной записью клиента \"{{accountName}}\".",
 		"restoreMasquerading": "Вы больше не используете учётную запись клиента.",
-		"__comment": "UI-1498: Moved call restrictions back from limits to the account document",
-		"__version": "v3.20_s5",
 		"callRestrictionsUpdateSuccess": "Ограничения звонков успешно обновлены!",
 		"callRestrictionsUpdateError": "Во время обновления ограничений звонков произошла ошибка. Пожалуйста, попробуйте ещё раз чуть попозже"
 	},
@@ -210,11 +208,7 @@
 		"trunking": "Каналы",
 		"inbound": "Входящие",
 		"outbound": "Исходящие",
-		"__comment": "UI-664: New restriction for twoway trunks",
-		"__version": "v3.19_s2",
 		"twoway": "Двунаправленные",
-		"__comment": "UI-1074: New restriction for Misc Error Tracker",
-		"__version": "v3.20_s2",
 		"errorTracker": "Журнал ошибок интерфейса",
 		"misc": "Разное"
 	},
@@ -234,26 +228,14 @@
 		"или",
 		"Создайте новую учётную запись клиента нажав на кнопку \"Добавить нового клиента\"."
 	],
-	"__comment": "UI-966: created common control for carrier selection",
-	"__version": "v3.20_s0",
 	"carrierTab": "Оператор",
-        "__comment": "UI-1171: Add a field to show the type of an account",
-        "__version": "v3.20_s2",
         "accountType": "Тип клиента",
         "reseller": "Агент",
         "standard": "Абонент",
-        "__comment": "UI-1169: Sending an email to newly created admins",
-        "__version": "v3.20_s3",
         "sentEmailPopup": "Информация об учётной записи была отправлена на адрес {{email}}.",
-        "__comment": "UI-1324: Adding the option to disable Braintree through a config flag",
-        "__version": "v3.20_s4",
         "disabledAddCreditTooltip": "Для добавления средств требуется Braintree. Пожалуйста, свяжитесь с администратором.",
-        "__comment": "UI-1448: Add name of the account to be deleted in the confirm message for a better UX",
-        "__version": "v3.20_s5",
         "deleteAccountConfirmVar": "Этот клиент (\"{{accountName}}\") будет безвозвратно удалён. Продолжить?",
 
-        "__comment": "UI-1460: Force user to type a string before deleting an account",
-        "__version": "v3.20_s5",
         "deleteAccountDialog": {
                 "title": "Подтверждение удаления клиента",
                 "cancel": "Отмена",
@@ -263,8 +245,6 @@
                 "deleteMessageExplanation": "Пожалуйста, введите слово \"{{variable}}\" ниже и нажмите кнопку УДАЛИТЬ для продолжения"
         },
 
-	"__comment": "UI-1609: Add a way to Remove Credit",
-	"__version": "3.21",
 	"updateCreditDialog": {
 		"title": "Обновить количество средств",
 		"creditBalance": "Доступный баланс",
@@ -277,7 +257,9 @@
 		"placeholderAmount": "10.00",
 		"successfulUpdate": "Значение баланса успешно обновлено"
 	},
-	"__comment": "UI-1660: Add meaningful error when trying to delete account with descendant(s)",
-	"__version": "3.22",
-	"account_has_descendants": "Прежде чем удалить эту учётную запись, сначала нужно удалить все дочерние учётные записи"
+	"account_has_descendants": "Прежде чем удалить эту учётную запись, сначала нужно удалить все дочерние учётные записи",
+        "changeServicePlanDialog": {
+                "title": "Set service plan",
+                "successUpdate": "You successfuly updated the service plan of this account!"
+        }
 }

@@ -12,7 +12,7 @@
        },
        "de-DE": {
            "label": "Kontenverwaltung",
-           "description": "Die Kontenverwaltung ermöglicht Ihnen das erstellen, ändern Ihre Kundenkonten",
+           "description": "Die Kontenverwaltung ermöglicht Ihnen das erstellen und ändern Ihre Kundenkonten",
            "extended_description": "Diese Anwendung ermöglicht es Wiederverkäufern Einstellungen für Ihre Kundenkonten zu verwalten. Über dieses Tool können Sie alle Unterkonten unter Ihrem Hauptkonto verwalten, so dass Sie den Überblick über Ihre Unterkonten behalten.",
            "features": [
                "Anpassbare Unterkonten",
@@ -38,11 +38,7 @@
            ]
        }
    },
-   "tags": [
-       "reseller",
-       "developer",
-       "carrier"
-   ],
+   "tags": [ "reseller", "developer", "carrier" ],
    "icon": "Accounts_app.png",
    "api_url": "http://kazoo.allip.ovh:8000/v2",
    "author": "2600Hz",

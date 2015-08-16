@@ -280,5 +280,9 @@
                 "placeholderAmount": "10.00",
                 "successfulUpdate": "Congratulations, you successfuly updated the amount of credits available on that account! :)"
         },
-        "account_has_descendants": "You need to delete subaccounts before deleting this account"
+        "account_has_descendants": "You need to delete subaccounts before deleting this account",
+        "changeServicePlanDialog": {
+                "title": "Set service plan",
+                "successUpdate": "You successfuly updated the service plan of this account!"
+        }
 }

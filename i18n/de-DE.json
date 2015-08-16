@@ -230,7 +230,7 @@
                 "uiRestrictionsUpdateError": "Ein unerwarteter Fehler ist aufgetreten, bei der Aktualisierung der UI-Beschränkungen. Versuchen Sie es später erneut.",
                 "notesUpdateSuccess": "Notiz erfolgreich aktualisiert!",
                 "notesUpdateError": "Bei der Aktualisierung der Tarife ist ein unerwarteter Fehler ist aufgetreten, versuchen Sie es später erneut.",
-                "triggerMasquerading": "Ihr Konto {{accountname}} ist jetzt für Ihre Kunden nicht sichtbar",
+                "triggerMasquerading": "Ihr Konto {{accountname}} ist jetzt nicht sichtbar",
                 "restoreMasquerading": "Ihr Konto ist wieder sichtbar."
         },
         "uiRestrictionsLegend": "Wählen Sie, was Ihre Kunden sehen können",
@@ -311,5 +311,9 @@
                 "placeholderAmount": "100.00",
                 "successfulUpdate": "Sie haben erfolgreich den Betrag dieses Kontos ausgeglichen! :)"
         },
-        "account_has_descendants": "Sie müssen zuerst alle Unterkontos löschen, um diess Konto zu löschen zu können."
+        "account_has_descendants": "Sie müssen zuerst alle Unterkontos löschen, um diess Konto zu löschen zu können.",
+        "changeServicePlanDialog": {
+                "title": "Anpassung des Abonnementsplan",
+                "successUpdate": "Sie haben den Abonnementsplan für dieses Konto erfolgreich gespeichert!"
+        }
 }
