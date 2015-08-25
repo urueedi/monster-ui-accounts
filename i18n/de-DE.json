@@ -19,7 +19,16 @@
                         "provisionEnabled": "Ist Eingeschaltet",
                         "provisionDisabled": "Ist Ausgeschaltet",
                         "supportCreatenew": "Benutzer Gerätekonfiguration ein"
-                }
+                },
+                "dialplan": {
+                        "title": "Konto-Rufplan",
+                        "account": "Induvidueller Kontorufplan",
+                        "descript": "Induvidueller Kontorufplan",
+                        "enabled": "Eigener Kontorufplan",
+                        "disabled": "Nein"
+                },
+                "is_reseller": "Ist ein Wiederverkäufer",
+                "is_business": "Ist ein Businesskunde"
         },
         "servicePlanDetails": {
                 "rate": "Monatlich:",

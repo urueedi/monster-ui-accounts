@@ -21,7 +21,16 @@
                         "provisionEnabled": "Is Enabled",
                         "provisionDisabled": "Is Disabled",
                         "supportCreatenew": "User Devicesetting on"
-                }
+                },
+                "dialplan": {
+                        "title": "Accout-Dialplan",
+                        "account": "Own Account-Dialplan",
+                        "descript": "Own Account-Dialplan",
+                        "enabled": "Own Account-Dialplan",
+                        "disabled": "None"
+                },
+                "is_reseller": "Is Reseller",
+                "is_business": "Is Businesscustomer"
         },
 	"addAccount": "Add New Account",
 	"editSetting": "Edit",

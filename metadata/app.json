@@ -12,8 +12,8 @@
        },
        "de-DE": {
            "label": "Kontenverwaltung",
-           "description": "Die Kontenverwaltung ermöglicht Ihnen das erstellen und ändern Ihre Kundenkonten",
-           "extended_description": "Diese Anwendung ermöglicht es Wiederverkäufern Einstellungen für Ihre Kundenkonten zu verwalten. Über dieses Tool können Sie alle Unterkonten unter Ihrem Hauptkonto verwalten, so dass Sie den Überblick über Ihre Unterkonten behalten.",
+           "description": "Die Kontenverwaltung ermöglicht Ihnen das Erstellen und Ändern Ihre Kundenkonten",
+           "extended_description": "Diese Anwendung ermöglicht es Wiederverkäufern Einstellungen für Ihre Kundenkonten zu verwalten. Über dieses Tool können Sie alle Unterkonten unter Ihrem Hauptkonto verwalten, und können als Wiederverkäufer Ihren Kunden direkt eine Dienstleistung erbringen.",
            "features": [
                "Anpassbare Unterkonten",
                "Einfache Überwachung, für Unterkonten"
