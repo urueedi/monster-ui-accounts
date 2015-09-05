@@ -133,7 +133,8 @@
 		"rates": "Gesprächstarife",
 		"limits": "Limiten",
 		"restrictions": "Kontoansicht",
-		"notes": "Notizen"
+		"notes": "Notizen",
+		"appstore": "Neue Apps"
 	},
 	"classifiers": {
 		"unknown": {
@@ -324,5 +325,6 @@
         "changeServicePlanDialog": {
                 "title": "Anpassung des Abonnementsplan",
                 "successUpdate": "Sie haben den Abonnementsplan für dieses Konto erfolgreich gespeichert!"
-        }
+        },
+        "appstoreLegend": "Bestimmen Sie welche App dieses Konto einschalten kann"
 }
