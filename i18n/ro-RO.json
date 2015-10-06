@@ -11,6 +11,15 @@
                         "permin_descript": "Maximalcost allowed per minute",
                         "permin_descript_short": "Allowed per minute"
                 },
+                "callerid": {
+                        "title": "Account-Caller-ID",
+                        "externaldefault": "+41525081922",
+                        "emergencydefault": "+41525081922",
+                        "external": "External Caller-ID",
+                        "emergency": "Emergency-Caller-ID",
+                        "external_descript": "(Caller-ID if external call)",
+                        "emergency_descript": "(Caller-ID if call to emergency services)"
+                },
                 "provision": {
                         "title": "Automatic Devicesettings",
                         "urlPass": "URL-Password",
@@ -20,7 +29,7 @@
                         "supportProvision": "Automatic Devicesetting on",
                         "provisionEnabled": "Is Enabled",
                         "provisionDisabled": "Is Disabled",
-                        "supportCreatenew": "User Devicesetting on"
+                        "supportCreatenew": "Devicesetting in userportal"
                 },
                 "dialplan": {
                         "title": "Accout-Dialplan",
