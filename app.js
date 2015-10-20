@@ -5,6 +5,7 @@ define(function(require){
 		monster = require('monster'),
 		toastr = require('toastr'),
 		language = require('monster-language'),
+		regionaldialplan = require('monster-regiodialplan'),
 		timezone = require('monster-timezone');
 
 	var app = {
@@ -474,6 +475,7 @@ define(function(require){
 
 			timezone.populateDropdown(parent.find('#accountsmanager_new_account_timezone'));
 			language.populateDropdown(parent.find('#accountsmanager_new_account_language'));
+			regionaldialplan.populateDropdown(parent.find('#accountsmanager_new_account_regiodialplan'));
 
 			parent.find('.change-realm').on('click', function(e) {
 				parent.find('.generated-realm').hide();
@@ -1417,6 +1419,7 @@ define(function(require){
 					module = $this.data('module'),
 					fieldName = $this.data('field'),
 					newData = self.cleanFormData(monster.ui.getFormData('form_'+fieldName));
+                                        newData.dial_plan = JSON.parse(regionaldialplan.list[newData.regiodialplan].dial_plan);
 
 				if(monster.ui.valid(contentHtml.find('#form_'+fieldName))) {
 					self.updateData(accountData, newData,
@@ -1535,6 +1538,8 @@ define(function(require){
 			language.populateDropdown(contentHtml.find('#accountsmanager_account_language'), accountData.language);
 			contentHtml.find('#accountsmanager_account_language').chosen({search_contains: true, width: "220px"});
 
+			regionaldialplan.populateDropdown(contentHtml.find('#accountsmanager_account_regiodialplan'), accountData.regiodialplan);
+			contentHtml.find('#accountsmanager_account_regiodialplan').chosen({search_contains: true, width: "220px"});
 
 			monster.ui.tooltips(contentHtml);
 
