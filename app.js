@@ -1419,7 +1419,8 @@ define(function(require){
 					module = $this.data('module'),
 					fieldName = $this.data('field'),
 					newData = self.cleanFormData(monster.ui.getFormData('form_'+fieldName));
-                                        newData.dial_plan = JSON.parse(regionaldialplan.list[newData.regiodialplan].dial_plan);
+                                        if(typeof newData.regiodialplan == "string")
+                                            newData.dial_plan = JSON.parse(regionaldialplan.list[newData.regiodialplan].dial_plan);
 
 				if(monster.ui.valid(contentHtml.find('#form_'+fieldName))) {
 					self.updateData(accountData, newData,
